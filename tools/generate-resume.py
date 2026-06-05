@@ -551,6 +551,15 @@ def main():
     jd_text = jd_path.read_text(encoding="utf-8")
     source = yaml.safe_load(source_path.read_text(encoding="utf-8"))
 
+    # Attach identity profile so build_resume can read profile-driven sections (UPSTREAM title, etc.)
+    import importlib.util as _il
+    _spec = _il.spec_from_file_location("profile_loader", SCRIPT_DIR / "profile_loader.py")
+    _pl = _il.module_from_spec(_spec); _spec.loader.exec_module(_pl)
+    try:
+        source["_profile"] = _pl.load_profile()
+    except FileNotFoundError:
+        source["_profile"] = {}   # engine still runs with resume-source.yaml alone
+
     role_type = args.role_type or detect_role_type(jd_text)
     print(f"Role type: {role_type} {'(auto-detected)' if not args.role_type else '(override)'}")
 
