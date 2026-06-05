@@ -1,0 +1,61 @@
+id: doctrine-enforcement
+title: "DOCTRINE ENFORCEMENT: AGENTIC GOVERNANCE SCAFFOLD FROM ZERO"
+type: case-study
+date: "2026-02"
+employer: "AWACS LLC"
+role_types: [fde, agentic_lead, trust_and_safety, applied_ai_engineer]
+tags: [ai-governance, agentic, quality-gates, playbook, fde, enforcement, enterprise, llm-ops, adversarial]
+ats_keywords:
+  - preToolUse
+  - postToolUse
+  - exit code enforcement
+  - hook architecture
+  - adversarial testing
+  - agentic governance
+  - production hooks
+  - behavioral guardrails
+  - assertion testing
+  - governance scaffold
+metrics:
+  - "256 final assertions, zero failures"
+  - "3 rounds of intentional violation testing"
+  - "sys.exit(1) is silently non-blocking, only exit(2) blocks"
+  - "2 upstream issues filed: #44707, #57946 (area:hooks area:security)"
+claims:
+  - verified: true
+    text: "sys.exit(1) in PreToolUse is silently non-blocking; only exit code 2 blocks tool execution"
+    proof: "GitHub #44707 filed and labeled area:hooks area:security; merged into docs"
+  - verified: true
+    text: "PreToolUse silently bypassed on Windows via Python Store stub (exits 49 in non-TTY subprocess)"
+    proof: "GitHub #57946 open, labeled area:hooks area:security platform:windows"
+evidence_urls:
+  - "https://github.com/anthropics/claude-code/issues/44707"
+  - "https://github.com/anthropics/claude-code/issues/57946"
+testimony: >
+  I built this governance system specifically to be attacked. The premise: if you can't
+  intentionally violate your own enforcement layer and prove it holds, you don't actually
+  have enforcement, you have the appearance of enforcement. Three rounds of targeted testing
+  across PreToolUse/PostToolUse hooks; 256 assertions written against the scaffold before
+  declaring it production-ready. The field discovery that came out of this, sys.exit(1) in
+  PreToolUse is silently non-blocking, only exit(2) actually stops the operation, was absent
+  from all Anthropic documentation and had been producing false confidence in enforcement
+  architecture across FDE deployments. Filed upstream as #44707 and #57946. The scaffold is
+  the playbook: a three-round adversarial testing pattern any FDE team can drop into a new
+  deployment and run before it touches production data. The canonical rule, PostToolUse
+  detects, PreToolUse prevents, is now enforced by code, not by policy.
+bullet_variants:
+  featured: >
+    Designed and validated a production agentic governance system using three rounds of
+    intentional violation testing across a PreToolUse/PostToolUse enforcement scaffold,
+    256 final assertions, zero failures. Critical field discovery: sys.exit(1) in PreToolUse
+    is silently non-blocking; only exit code 2 blocks the operation, absent from all vendor
+    documentation, produced false confidence in enforcement architecture across the industry.
+    Filed upstream as GitHub #44707 and #57946 (labeled area:hooks area:security). The
+    enforcement scaffold IS the playbook: a reusable, three-round adversarial testing pattern
+    any FDE team can run to validate a new agentic deployment before it touches production
+    data. The canonical rule, "PostToolUse detects, PreToolUse prevents", is now enforced
+    by code, not by policy. Limitation documented and owned: single-company internal
+    deployment; multi-client portability is the design goal, not yet the track record.
+  long: "**Agentic governance scaffold, adversarially validated:** 3 rounds of intentional violation testing, 256 assertions, zero failures; discovered sys.exit(1) is non-blocking in PreToolUse, absent from all vendor docs, filed upstream as GitHub #44707/#57946 (area:hooks area:security)."
+  short: "Built and adversarially tested a production PreToolUse/PostToolUse enforcement scaffold; exit(1) is non-blocking in PreToolUse, filed upstream #44707/#57946."
+  ats_dense: "**AI governance enforcement (PreToolUse/PostToolUse hooks, adversarial testing, exit code 2 blocking):** 256 assertions, zero failures; sys.exit(1) bypass discovered and filed upstream #44707; enforcement architecture deployed in production agentic system."

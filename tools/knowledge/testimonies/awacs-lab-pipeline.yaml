@@ -1,0 +1,61 @@
+id: awacs-lab-pipeline
+title: "AWACS LAB: MULTI-AGENT KNOWLEDGE PIPELINE WITH LIVE QUALITY GATE"
+type: tool
+date: "2025-10"
+employer: "AWACS LLC"
+role_types: [agentic_lead, applied_ai_engineer, tech_lead_manager, research_engineer, trust_and_safety]
+tags: [multi-agent, agentic, orchestration, llm-ops, sandbox, quality-gates, observability, rapid-prototyping]
+ats_keywords:
+  - knowledge pipeline
+  - admission gate
+  - trust tiers
+  - multi-agent orchestration
+  - quality gate
+  - tamper detection
+  - class A admission
+  - JSONL decision log
+  - live dashboard
+  - knowledge base governance
+  - SHA-256 verification
+  - canvas-style sandbox
+metrics:
+  - "80 logged gate decisions (admit and reject, both on record)"
+  - "5-question admission gate fires on every knowledge candidate"
+  - "Class A/B/C trust tiers for knowledge entries"
+  - "SHA-256 tamper detection on brake events"
+  - "Live status dashboard at awacs.ai/status"
+  - "62 Class A execution-validated entries in the KB"
+claims:
+  - verified: true
+    text: "80 gate decisions logged, both admit and reject decisions are on record"
+    proof: "Live at awacs.ai/status; JSONL decision log in the production KB"
+  - verified: true
+    text: "No path around the quality gate exists by design"
+    proof: "Admission architecture enforces gate before any Class A write"
+evidence_urls:
+  - "https://awacs.ai/status"
+  - "https://github.com/Dwink213/manifest"
+testimony: >
+  I built this to solve a problem I kept hitting: LLM-generated knowledge that looked correct
+  but wasn't execution-validated, mixed into a corpus with no way to separate trusted from
+  untrusted content. The solution was structural: a 5-question admission gate that fires before
+  any knowledge entry can reach Class A status, with every decision logged to an append-only
+  JSONL file. You can't admit something to Class A without passing the gate; there's no
+  admin override path. Class B and C exist as staging tiers. The SHA-256 brake events catch
+  any tampering with the execution log itself. The dashboard at awacs.ai/status shows the
+  live state of the pipeline, what's been admitted, what's been rejected, and why. The
+  engagement model it embodies: every claim earns its way in through a structured gate,
+  and rejection decisions are just as important to log as admission decisions.
+bullet_variants:
+  featured: >
+    Multi-agent production pipeline: Analyzer and Librarian agents operating in structured
+    handoff, 5-question admission gate firing on every knowledge candidate before Class A
+    admission, 80 gate decisions on record (admit and reject, both logged), Class A/B/C
+    trust tiers, SHA-256 tamper detection on brake events. The engagement model in
+    operational form: every claim earns admission through a structured gate; no path
+    bypasses the quality check because there is no path around it. Live status dashboard
+    (awacs.ai/status) shows pipeline state in real time. Canvas-style sandbox: model output
+    evaluated, versioned, and governed before it enters the production knowledge base.
+  long: "**Multi-agent knowledge pipeline:** Analyzer + Librarian agents, 5-question admission gate, 80 logged decisions (admit + reject), Class A/B/C trust tiers, SHA-256 tamper detection; live status at awacs.ai/status."
+  short: "Built a multi-agent KB pipeline with a 5-question quality gate and 80 logged decisions; Class A/B/C trust tiers, SHA-256 tamper detection."
+  ats_dense: "**Multi-agent orchestration (Analyzer + Librarian pattern, structured handoff, quality gate, trust tiers):** 5-question admission gate, 80 decisions logged (append-only JSONL), Class A/B/C knowledge governance, SHA-256 brake events; canvas-style sandbox for LLM output evaluation."

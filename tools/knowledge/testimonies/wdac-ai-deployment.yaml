@@ -1,0 +1,57 @@
+id: wdac-ai-deployment
+title: "WDAC AI DEPLOYMENT UNDER FULL ENFORCEMENT"
+type: deployment
+date: "2026-01"
+employer: "Enterprise Health-Tech Co."
+role_types: [fde, agentic_lead, applied_ai_engineer, trust_and_safety]
+tags: [enterprise-deployment, azure, wdac, ai-governance, enforcement, production, fde]
+ats_keywords:
+  - WDAC
+  - Windows Defender Application Control
+  - Azure Arc SSH
+  - HCI cluster
+  - enterprise AI deployment
+  - production enforcement
+  - GraphQL API introspection
+  - SMB admin shares
+  - base64 SSH transfer
+  - governance rules
+  - sshd lockout
+  - application allowlisting
+metrics:
+  - "4-node HCI cluster"
+  - "8 governance rules derived from prior session's sshd lockout"
+  - "None fired incorrectly; one fired correctly when it mattered"
+  - "Azure Arc SSH as the only access path under WDAC enforcement"
+claims:
+  - verified: true
+    text: "AI deployed successfully under active WDAC enforcement with no false positives"
+    proof: "Production deployment at Enterprise Health-Tech Co., 4-node HCI cluster"
+  - verified: true
+    text: "GraphQL API introspection, SMB admin shares, and base64-over-SSH file transfer all operational under WDAC"
+    proof: "Production session logs; deployment validated across all three access patterns"
+evidence_urls: []
+testimony: >
+  WDAC is application allowlisting at the kernel level, it blocks anything not explicitly
+  permitted. Most AI deployment guides assume you can run arbitrary Python; under WDAC,
+  you can't. The prior session on this cluster ended in an sshd lockout because a governance
+  rule was too aggressive. I took that incident and turned it into 8 production rules derived
+  from exactly what failed. When those rules were loaded in the next session, they held under
+  production load: none fired incorrectly, one fired correctly when it was supposed to.
+  The enterprise integration work, GraphQL API introspection against the backup platform,
+  SMB admin shares for file access, base64-over-SSH when normal file transfer was blocked
+  by WDAC, each required adapting the standard AI workflow to the constraints of a locked-down
+  enterprise environment. The lesson: every hard constraint in enterprise AI deployment is an
+  opportunity to learn something the vendor docs don't teach.
+bullet_variants:
+  featured: >
+    Deployed AI agent under active WDAC enforcement on a 4-node HCI cluster with Azure Arc
+    SSH as the only permitted access path; enterprise system integration required GraphQL API
+    introspection, SMB admin shares, and base64-over-SSH file transfer. Eight governance rules
+    derived from the prior session's sshd lockout; all 8 held under production load, 
+    none fired incorrectly, one fired correctly when it mattered. The constraints of a
+    WDAC-enforced environment produced a set of hard-won deployment patterns that no vendor
+    documentation describes.
+  long: "**WDAC AI deployment under full enforcement:** 4-node HCI cluster, Azure Arc SSH only access path, enterprise integrations (GraphQL API, SMB admin, base64-over-SSH); 8 governance rules from prior sshd lockout, none misfired, one fired correctly under production load."
+  short: "Deployed AI under active WDAC enforcement; 8 governance rules derived from a real sshd lockout, none fired incorrectly, one fired correctly."
+  ats_dense: "**Enterprise AI deployment (WDAC, Azure Local HCI, Azure Arc SSH, application allowlisting):** 4-node production cluster; governance rules load-tested under enforcement; GraphQL API introspection, SMB, base64-over-SSH integration patterns documented."

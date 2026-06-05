@@ -1,0 +1,51 @@
+id: ai-enablement-talk
+title: "AI ENABLEMENT SESSIONS: 200+ ATTENDEES, SVP TO ENGINEERS"
+type: talk
+date: "2026-02"
+employer: "Enterprise Health-Tech Co."
+role_types: [tech_lead_manager, fde, applied_ai_engineer]
+tags: [ai-enablement, demos, leadership, communication, agentic, player-coach]
+ats_keywords:
+  - AI enablement
+  - executive communication
+  - technical demos
+  - player-coach
+  - AI observability
+  - specialist agent methodology
+  - leadership buy-in
+  - technical communication
+  - internal AI rollout
+  - stakeholder education
+metrics:
+  - "2 sessions delivered"
+  - "200+ attendees"
+  - "Audience: SVP through engineers"
+  - "Topics: AI-powered observability and specialist agent methodology"
+claims:
+  - verified: true
+    text: "Delivered 2 AI enablement sessions to 200+ employees including SVP-level executives"
+    proof: "Internal delivery at Enterprise Health-Tech Co., Feb 2026"
+evidence_urls: []
+testimony: >
+  I was asked to help the organization understand what AI agents could actually do for them, 
+  not in theory, but in terms they could act on. The gap between "AI is powerful" and
+  "here's how to deploy it in your team" is where most enablement fails. I built two sessions
+  designed around demos that executives could watch and engineers could learn from simultaneously.
+  The first session focused on AI-powered observability, what it looks like when 3,000+ backup
+  jobs per week get analyzed by an LLM instead of being manually reviewed. The second session
+  introduced specialist agent methodology: how to structure a multi-agent system where each
+  agent has a clear role, a defined input, and a constrained output. Delivered to SVP through
+  individual contributors. The test: did people leave knowing what to do next? The answer
+  was yes.
+bullet_variants:
+  featured: >
+    I delivered two AI enablement sessions to 200+ attendees (SVP through engineers) on
+    AI-powered observability and specialist agent methodology, and translated agentic
+    architecture into demos leadership could act on. First session: a live AI-powered
+    observability demo showing LLM triage of 3,000+ backup jobs per week. Second session:
+    specialist agent methodology, how to assign roles, structure handoffs, and constrain
+    agent scope for production reliability. The goal was to close the gap between "AI is
+    powerful" and "here is what to do Monday."
+  long: "**AI enablement lead, Feb 2026:** delivered 2 sessions to 200+ attendees (SVP through engineers) on AI-powered observability and specialist agent methodology; demos translated agentic architecture into leadership-actionable insights."
+  short: "Led 2 AI enablement sessions for 200+ employees (SVP to engineers); live demos on agentic observability and specialist agent methodology."
+  ats_dense: "**AI enablement (technical demos, executive communication, agentic systems, player-coach delivery):** 200+ attendees, SVP to IC; AI observability and specialist agent methodology; closed gap between architectural concepts and production action plans."

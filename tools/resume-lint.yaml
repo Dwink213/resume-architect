@@ -1,0 +1,40 @@
+# resume-lint.yaml — content quality gate for generated resumes.
+# check-resume.py reads this and FAILS the build (exit 2) on any violation.
+# This is governance by code: the rules are data here, not a promise to be careful.
+# Edit freely. Add a word to `banned`, a phrase to `required`, a cap to `max_occurrences`.
+
+# 1) Banned strings / regex (case-insensitive). AI-tell words and things Dustin does not say.
+banned:
+  - "—"                 # em dash (use periods or commas)
+  - "\\bprose\\b"            # flagged twice by Dustin
+  - "heterogeneity tax"      # jargon
+  - "self-drafted"           # from the old cover-sheet line
+  - "refinement-of-self"
+  - "#37550"                 # not Dustin's issue (filed by another user); never claim it
+  - "\\bdelve\\b"            # classic AI tell
+  - "\\btapestry\\b"         # classic AI tell
+  - "\\bunderscore[sd]?\\b"  # AI tell ("underscores the importance of")
+
+# 2) Phrases that may appear AT MOST N times (catches accidental duplication).
+max_occurrences:
+  "11,000": 1
+  "11k": 1
+  "supply-chain risk": 2
+
+# 3) Strings that MUST appear in every resume (catches dropped must-haves).
+#    Per-application extras go in applications/FOLDER/must-include.txt (one per line).
+required:
+  - "EDUCATION"
+  - "#44707"
+  - "#57946"
+  - "#44711"
+  - "AWACS"
+  - "awacs.ai"
+
+# 4) Must-include automation knobs. Used by job-hunt-architect when it auto-generates a
+#    per-application must-include.auto.txt from the JD (evidence-gated selection).
+#    These are the tuning dials: turn the list down, or let differentiators in.
+must_include:
+  max_terms: 12                 # cap the auto list (avoid over-constraint / keyword stuffing)
+  include_differentiators: true # include Dustin's standout backed terms (gated KB, exit(2),
+                                # 31-hour build), not just JD-required terms

@@ -1,0 +1,53 @@
+id: cloud-provider-engagement-model
+title: "NATIONAL CLOUD PROVIDER: MULTI-CLIENT ENTERPRISE ENGAGEMENT MODEL AT SCALE"
+type: methodology
+date: "2011-10 to 2020-04"
+employer: "National Cloud Provider"
+role_types: [fde, tech_lead_manager]
+tags: [multi-client, enterprise, fde, engagement-model, customer-facing, leadership, infrastructure]
+ats_keywords:
+  - multi-client portfolio
+  - data protection architecture
+  - hybrid cloud
+  - managed backup
+  - customer-facing technical lead
+  - enterprise consulting
+  - multi-tenant architecture
+  - SLA delivery
+  - datacenter migration
+  - level I II III support structure
+metrics:
+  - "~50 customer environments across dedicated, hybrid, private, and public cloud"
+  - "13 public cloud datacenters migrated"
+  - "Built Level I/II/III promotional path"
+  - "Technical lead on largest accounts"
+  - "Multi-tenant managed backup product designed"
+claims:
+  - verified: true
+    text: "Designed data protection for ~50 customer environments spanning dedicated, hybrid, private, and public cloud"
+    proof: "Employment history at National Cloud Provider, Oct 2011 – Apr 2020"
+evidence_urls: []
+testimony: >
+  At National Cloud Provider I was responsible for the data protection architecture of roughly 50 customer
+  environments simultaneously, dedicated, hybrid, private cloud, and public cloud, across
+  every major backup platform of that era. Being the technical lead across that many different
+  environments taught me something that vendor documentation systematically understates:
+  heterogeneity is expensive. Every customer has a slightly different configuration, a slightly
+  different SLA, and slightly different tolerance for complexity. The engagement model that
+  works at this scale has to be portable. I also designed the multi-tenant managed backup
+  product and built the Level I/II/III promotional path so delivery didn't depend on any
+  single person. The 13-datacenter migration was executed without data loss and without a
+  single-point-of-failure in the team. Multi-client delivery methodology is something you
+  learn by doing it at this volume; I can't get that from a project.
+bullet_variants:
+  featured: >
+    Designed data protection architecture for ~50 customer environments across dedicated,
+    hybrid, private, and public cloud at National Cloud Provider; technical lead on largest accounts,
+    built multi-tenant managed backup product, established Level I/II/III promotional path.
+    Led migration of 13 public cloud datacenters with zero data loss and no single point of
+    failure in delivery methodology. Managing 50 different customer configurations, where no two
+    were alike, is the background for why portability and governance are first-class concerns in
+    my AI deployment work.
+  long: "**National Cloud Provider engagement model:** technical lead for ~50 customer environments (dedicated, hybrid, private, public cloud); designed multi-tenant managed backup product; built Level I/II/III path; migrated 13 public cloud datacenters, zero data loss."
+  short: "Led data protection for ~50 customer environments at National Cloud Provider; designed multi-tenant backup product, built support ladder, migrated 13 datacenters."
+  ats_dense: "**Multi-client enterprise engagement (~50 environments, hybrid cloud, SLA management, technical lead):** multi-tenant backup product designed; Level I/II/III support structure built; 13-datacenter migration completed, zero data loss."

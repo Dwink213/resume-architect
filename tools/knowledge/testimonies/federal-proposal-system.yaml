@@ -1,0 +1,54 @@
+id: federal-proposal-system
+title: "FEDERAL PROPOSAL CONSULTANCY: AI-POWERED FEDERAL PROPOSAL SYSTEM"
+type: case-study
+date: "2025-01"
+employer: "Federal Proposal Consultancy"
+role_types: [govcon, applied_ai_engineer, agentic_lead]
+tags: [govcon, federal, ai, proposal, llm, production]
+ats_keywords:
+  - federal govcon
+  - proposal automation
+  - Shipley method
+  - BID/NO-BID decision support
+  - SAM.GOV integration
+  - zero-fabrication
+  - human-in-the-loop
+  - federal procurement
+  - AI proposal writer
+  - compliance-aware AI
+  - government contracts
+metrics:
+  - "200+ dev hours, production deployed"
+  - "Shipley-method proposal creation and review"
+  - "SAM.GOV integration"
+  - "Zero-fabrication architecture"
+  - "Human-in-the-loop validation at each output stage"
+claims:
+  - verified: true
+    text: "Zero-fabrication architecture: no AI-generated claims without traceable source"
+    proof: "Design principle enforced in production; all proposal content cites a source document or input"
+  - verified: true
+    text: "BID/NO-BID decision support with Shipley-method alignment"
+    proof: "Production deployment for Federal Proposal Consultancy clients"
+evidence_urls: []
+testimony: >
+  Federal proposals are high-stakes documents where fabricated claims have legal consequences.
+  The standard LLM pitfall, plausible-sounding content that isn't grounded in anything real,
+  is disqualifying in this domain. I built the system around a zero-fabrication architecture:
+  every sentence in a generated proposal traces to a source document, a client input, or a
+  verified fact. The AI is a structuring and drafting layer, not a knowledge source. The
+  Shipley method provides the evaluation framework; the BID/NO-BID module uses it to score
+  opportunities before they enter the drafting pipeline. SAM.GOV integration pulls live
+  opportunity data so the system works with current solicitations. Human-in-the-loop
+  validation checkpoints prevent any AI output from advancing without review. Two hundred
+  dev hours. Production deployed.
+bullet_variants:
+  featured: >
+    Built an AI-powered federal proposal system for Federal Proposal Consultancy with Shipley-method
+    proposal creation and review, BID/NO-BID decision support, SAM.GOV integration, zero-fabrication
+    architecture, and human-in-the-loop validation. Zero-fabrication means every generated
+    sentence traces to a source document or verified input, no hallucinated claims in a
+    domain where fabrication has legal consequences. 200+ dev hours, production deployed.
+  long: "**Federal Proposal Consultancy**, AI-powered federal proposal writer: Shipley-method creation + review, BID/NO-BID decision support, SAM.GOV integration, zero-fabrication architecture (all claims traceable), human-in-the-loop validation; 200+ dev hours, production deployed."
+  short: "Built an AI-powered GOVCON proposal system (Shipley method, SAM.GOV integration, zero-fabrication architecture); 200+ dev hours, production deployed."
+  ats_dense: "**Federal AI system (GOVCON, Shipley method, SAM.GOV integration, zero-fabrication LLM, human-in-the-loop):** BID/NO-BID decision support, proposal creation + review, compliance-aware architecture; production deployed, 200+ dev hours."

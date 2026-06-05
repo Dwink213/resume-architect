@@ -1,0 +1,57 @@
+id: rubrik-observability
+title: "AI-POWERED RUBRIK OBSERVABILITY: 5 GLOBAL SITES, 6 WEEKS"
+type: deployment
+date: "2024-09"
+employer: "Enterprise Health-Tech Co."
+role_types: [applied_ai_engineer, agentic_lead, tech_lead_manager]
+tags: [azure, azure-openai, azure-ai-foundry, production, llm-ops, servicenow, velocity, api-observability]
+ats_keywords:
+  - Azure Functions
+  - Azure OpenAI
+  - Azure AI Foundry
+  - AI Foundry
+  - ServiceNow integration
+  - observability pipeline
+  - LLM-powered monitoring
+  - backup job monitoring
+  - ITSM integration
+  - automated alerting
+  - production LLM deployment
+  - zero to production
+  - API observability
+metrics:
+  - "3,000+ weekly backup jobs monitored"
+  - "5 global sites (Israel, Poland, Costa Rica, Mexico, US)"
+  - "6 weeks, zero to production"
+  - "Azure Functions + Azure OpenAI (via Azure AI Foundry) + ServiceNow"
+claims:
+  - verified: true
+    text: "3,000+ weekly backup jobs across 5 global sites, AI-powered analysis, ServiceNow ticket creation"
+    proof: "Production deployment at Enterprise Health-Tech Co., still running"
+evidence_urls:
+  - "https://github.com/Dwink213/api-observability-framework"
+  - "https://awacs.ai/case-studies/api-voyager.html"
+testimony: >
+  The problem wasn't that backup jobs were failing, it's that no one could tell which
+  failures mattered. Three thousand jobs per week across five continents; the noise-to-signal
+  ratio was high enough that real problems were getting buried in alert fatigue. I built
+  an Azure Functions pipeline that ingests Rubrik job events, routes them through Azure
+  OpenAI (provisioned and managed via Azure AI Foundry, dedicated instance for data
+  compliance) for triage and pattern analysis, and creates ServiceNow incidents for only the
+  failures that actually need human attention. Six weeks from concept to production across
+  a global enterprise environment. The key engineering decision was treating the LLM not
+  as a chatbot but as a classification layer, structured output, defined severity tiers,
+  deterministic routing to ServiceNow. That's not a demo. That's production LLM ops.
+  Azure AI Foundry was selected over shared OpenAI endpoints specifically for data
+  compliance and dedicated throughput in a global enterprise context.
+  Framework repo: github.com/Dwink213/api-observability-framework. Case study: awacs.ai/case-studies/api-voyager.html.
+bullet_variants:
+  featured: >
+    Shipped AI-powered Rubrik observability: an LLM system that answers operational
+    questions over the company's own structured backup data across 3,000+ weekly jobs
+    and 5 global sites; Azure Functions + Azure OpenAI + ServiceNow; six weeks zero to
+    production. Framework repo: github.com/Dwink213/api-observability-framework; case
+    study: awacs.ai/case-studies/api-voyager.html.
+  long: "**AI-powered Rubrik observability:** LLM system answering operational questions over the company's own structured backup data; 3,000+ weekly backup jobs monitored across 5 global sites; Azure Functions + Azure OpenAI + ServiceNow; LLM as classification layer for alert triage; 6 weeks zero to production. Repo: github.com/Dwink213/api-observability-framework."
+  short: "Shipped AI-powered observability for 3,000+ weekly backup jobs over the company's own structured backup data across 5 global sites (Azure Functions + OpenAI + ServiceNow) in 6 weeks."
+  ats_dense: "**LLM-powered observability pipeline (Azure Functions, Azure OpenAI, ServiceNow integration):** LLM answers operational questions over company structured backup data; 3,000+ weekly backup jobs, 5 global sites; structured LLM output for alert triage, severity classification, automated ITSM ticket creation; 6-week production deployment. Repo: github.com/Dwink213/api-observability-framework."

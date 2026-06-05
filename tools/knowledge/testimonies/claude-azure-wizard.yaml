@@ -1,0 +1,51 @@
+id: claude-azure-wizard
+title: "CLAUDE CODE AZURE DEPLOYMENT WIZARD: DEV/STAGING/PROD CI/CD"
+type: deployment
+date: "2025-12"
+employer: "Enterprise Health-Tech Co."
+role_types: [applied_ai_engineer, agentic_lead, tech_lead_manager]
+tags: [claude, azure, cicd, agentic, automation, rapid-prototyping, velocity]
+ats_keywords:
+  - Claude Code
+  - CI/CD drift detection
+  - deployment automation
+  - multi-environment deployment
+  - autonomous testing
+  - Dev/Staging/Prod pipeline
+  - nightly drift detection
+  - destroy/redeploy cycles
+  - agentic deployment
+  - infrastructure automation
+metrics:
+  - "Dev/Staging/Prod environments across 3 tiers"
+  - "Nightly CI/CD drift detection"
+  - "14 destroy/redeploy cycles"
+  - "24 hours autonomous testing"
+  - "Zero failures"
+  - "1 week build time"
+claims:
+  - verified: true
+    text: "14 destroy/redeploy cycles in 24 hours of autonomous testing with zero failures"
+    proof: "Internal deployment at Enterprise Health-Tech Co.; CI/CD pipeline logs"
+evidence_urls: []
+testimony: >
+  The question was whether Claude Code could autonomously manage its own deployment
+  environment, not just be used as a tool in a pipeline, but be the agent that runs
+  the pipeline. I built a three-tier Azure deployment wizard (Dev/Staging/Prod) where
+  Claude Code was responsible for drift detection, destroy/redeploy decisions, and
+  validation at each tier. Nightly runs, automated. 14 destroy/redeploy cycles during
+  24 hours of autonomous testing; zero failures. The design constraint was that drift
+  detection had to surface real differences between tiers, not false positives from
+  expected configuration variance. The result: an agentic system that manages infrastructure
+  state with enough fidelity that you can trust it to run overnight without human oversight.
+bullet_variants:
+  featured: >
+    Architected a Claude Code Azure deployment wizard spanning Dev/Staging/Prod with nightly
+    CI/CD drift detection; 14 destroy/redeploy cycles during 24 hours of autonomous testing,
+    zero failures, one week build time. Claude Code acted as the agent running the pipeline, 
+    responsible for drift detection, deploy decisions, and tier-to-tier validation.
+    Demonstrates the trust threshold required for overnight autonomous infrastructure management
+    in an enterprise environment.
+  long: "**Claude Code Azure deployment wizard:** Dev/Staging/Prod, nightly CI/CD drift detection, 14 destroy/redeploy cycles, 24 hours autonomous testing, zero failures, 1 week build time."
+  short: "Built a Claude Code Azure deployment wizard (Dev/Staging/Prod) with nightly drift detection; 14 destroy/redeploy cycles, 24 hours autonomous testing, zero failures."
+  ats_dense: "**Agentic CI/CD deployment (Claude Code, Azure, Dev/Staging/Prod, drift detection, autonomous testing):** 14 destroy/redeploy cycles, 24-hour autonomous run, 0 failures; nightly pipeline with infrastructure state validation across 3 tiers."

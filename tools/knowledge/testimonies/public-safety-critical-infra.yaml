@@ -1,0 +1,48 @@
+id: public-safety-critical-infra
+title: "COUNTY EMERGENCY SERVICES: LIFE-SAFETY INFRASTRUCTURE AT SCALE"
+type: deployment
+date: "2004-06 to 2011-10"
+employer: "Raleigh / County 911"
+role_types: [fde, tech_lead_manager]
+tags: [infrastructure, leadership, critical-systems, team-lead]
+ats_keywords:
+  - life-safety systems
+  - virtualization migration
+  - disaster recovery
+  - emergency dispatch
+  - 911 infrastructure
+  - VMware ESX
+  - physical to virtual migration
+  - MDC field communications
+  - DR failover
+  - critical infrastructure
+metrics:
+  - "10 physical servers to 200+ VMs on ESX 3.5"
+  - "Annual DR failover exercises with the backup 911 center"
+  - "In-car MDC system unifying field comms for Police, Fire, and EMS"
+claims:
+  - verified: true
+    text: "Migrated 10 physical servers to 200+ VMs; stood up a DR 911 center with annual failover"
+    proof: "Employment history at Raleigh / County 911, Jun 2004 – Oct 2011"
+evidence_urls: []
+testimony: >
+  My first real production environment was a 911 dispatch center. Police, Fire, and EMS
+  depended on the systems I maintained. The definition of "production outage" in this context
+  was not a degraded user experience, it was an unresponsive emergency call. That context
+  never leaves you. I migrated the entire server estate (10 physical machines) to 200+ VMs
+  on ESX 3.5, stood up the backup 911 dispatch center with annual failover drills, and built
+  the in-car MDC system that unified field communications across all three services. The
+  discipline I developed there, test your DR plan, document the recovery procedure, prove
+  the failover works before you need it, shows up in how I test governance scaffolds
+  adversarially before trusting them with production data.
+bullet_variants:
+  featured: >
+    Critical infrastructure for a county emergency dispatch center (Police, Fire, EMS): migrated
+    10 physical servers to 200+ VMs on ESX 3.5; stood up DR 911 center with annual failover;
+    built in-car MDC unifying field communications. Production was life-safety; downtime was
+    measured in lives. The discipline of operating in an environment where failure has
+    irreversible consequences is the background for why adversarial testing and governance
+    verification are first-class concerns in every system I build.
+  long: "**County 911 infrastructure:** migrated 10 physical to 200+ VMs on ESX 3.5; DR 911 center with annual failover; in-car MDC for Police/Fire/EMS field comms; production was life-safety."
+  short: "Ran critical infrastructure for County 911 (Police, Fire, EMS); 200+ VMs on ESX 3.5, DR center with annual failover, in-car MDC."
+  ats_dense: "**Life-safety critical infrastructure (VMware ESX, DR failover, emergency dispatch, team lead):** 10-to-200+ VM migration; annual DR failover validation; MDC field communications system; downtime measured in lives."

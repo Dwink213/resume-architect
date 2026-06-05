@@ -1,0 +1,238 @@
+# resume-source.yaml
+# Canonical source of all resume facts. The generator selects from this file.
+# Tags drive selection. Add new bullets/projects here; they become available to all future runs.
+
+header:
+  name: "Dustin Winkler"
+  tagline_default: "Forward Deployed AI Engineer · 25 years of infrastructure scar tissue"
+  tagline_ai: "Founder & Principal AI Engineer, AWACS · I direct AI to ship production systems"
+  tagline_govcon: "AI Systems Engineer · Federal GOVCON · Governance Architecture"
+  contact: "dustin@awacs.ai · awacs.ai · github.com/Dwink213 · linkedin.com/in/dustin-winkler-nc"
+  # Public Claude eval share link (manifest pre-loaded). Recruiter-facing: paste a JD to run a
+  # full evaluation against the manifest. This is the link printed on the cover sheet.
+  claude_link: "https://claude.ai/share/f19e5a2d-de9d-45df-8082-640f6a352dc5"
+
+featured_engagements:
+  - id: doctrine_enforcement
+    title: "DOCTRINE ENFORCEMENT: AGENTIC GOVERNANCE SCAFFOLD FROM ZERO"
+    tags: [ai-governance, agentic, quality-gates, playbook, fde, enforcement, enterprise, llm-ops]
+    prose: >
+      Designed and validated a production agentic governance system using three rounds of intentional
+      violation testing across a PreToolUse/PostToolUse enforcement scaffold, 256 final assertions,
+      zero failures. Critical field discovery: sys.exit(1) in PreToolUse is silently non-blocking;
+      only exit code 2 blocks the operation, absent from all vendor documentation, produced false
+      confidence in enforcement architecture across the industry. Filed upstream as GitHub #44707 and
+      #57946 (labeled area:hooks area:security). The enforcement scaffold IS the playbook: a reusable,
+      three-round adversarial testing pattern any FDE team can run to validate a new agentic deployment
+      before it touches production data. The canonical rule, "PostToolUse detects, PreToolUse prevents",
+      is now enforced by code, not by policy. Limitation documented and owned: single-company internal
+      deployment; multi-client portability is the design goal, not yet the track record.
+
+  - id: zero_trust_azure_lab
+    title: "DIRECTED A 31-HOUR AUTONOMOUS MULTI-AGENT BUILD (DEPLOYED, WITH RECEIPTS)"
+    tags: [azure, infrastructure, multi-agent, agentic, autonomous, security, iac, bicep, rbac, zero-trust, enterprise, rapid-prototyping, production, leadership, governance, claude]
+    prose: >
+      I configured four specialist agents (Architect, Security Engineer, Operator, Documentarian)
+      and ran a 31-hour autonomous Claude Code session that designed and deployed a secure Azure
+      backup system for shared lab workstations. I authorized each stage gate: threat model with six
+      named actors, 8-component Bicep IaC, CIS Azure Foundations Benchmark v5.0 controls (3.1, 3.7,
+      3.13, 3.14, 5.1, 7.1), immutable blob, cert-based service principal auth, daily SAS rotation.
+      The receipts are the point. When a SAS token expired and pushes silently returned HTTP 403 for
+      six days, and when an audit caught the AI writing down the plan instead of the pivot it actually
+      deployed, I caught both and fixed the record. I do not hand-type the code. I direct the agents,
+      decide the architecture, and catch where they are wrong. Deployed and running.
+      Repo: github.com/Dwink213/awacs-secure-data-consolidation-lab-workstations
+
+  - id: awacs_lab_pipeline
+    title: "AWACS LAB: MULTI-AGENT KNOWLEDGE PIPELINE WITH LIVE QUALITY GATE"
+    tags: [multi-agent, agentic, orchestration, llm-ops, sandbox, quality-gates, observability, rapid-prototyping]
+    prose: >
+      Multi-agent production pipeline: Analyzer and Librarian agents operating in structured handoff,
+      5-question admission gate firing on every knowledge candidate before Class A admission,
+      80 gate decisions on record (admit and reject, both logged), Class A/B/C trust tiers, SHA-256
+      tamper detection on brake events. The engagement model in operational form: every claim earns
+      admission through a structured gate; no path bypasses the quality check because there is no path
+      around it. Live status dashboard (awacs.ai/status) shows pipeline state in real time.
+      Canvas-style sandbox: model output evaluated, versioned, and governed before it enters the
+      production knowledge base.
+
+  - id: supply_chain_sentinel
+    title: "DIRECTED A PRODUCTION SUPPLY-CHAIN RISK ANALYZER (ABOUT 11K LINES OF PYTHON)"
+    tags: [rapid-prototyping, llm, pipeline, python, production, agentic]
+    prose: >
+      I directed the build of a supply-chain risk analyzer: about 11,000 lines of Python (Flask, the
+      Claude API) that takes a company's structured data and answers risk and disruption questions
+      about its suppliers, with an interactive dashboard. A multi-stage analysis pipeline where each
+      stage feeds the next. I decided the architecture and own the deployed result; the agent did the
+      typing. Repo: github.com/Dwink213/AI-supplychainmonitor-v2
+
+experience:
+  - company: "Enterprise Health-Tech Co."
+    location: "Raleigh, NC"
+    dates: "Apr 2020 – May 2026"
+    title: "Senior Data Protection Engineer / Cloud & AI Infrastructure"
+    bullets:
+      - id: ai_enablement_speaker
+        text: "**AI enablement lead, Feb 2026:** delivered two sessions to 200+ attendees (SVP through engineers) on AI-powered observability and specialist agent methodology; translated agentic architecture into demos leadership could act on."
+        tags: [ai-enablement, demos, leadership, communication, agentic, player-coach]
+
+      - id: wdac_deployment
+        text: "**WDAC AI deployment under full enforcement:** 4-node HCI cluster, WDAC active, Azure Arc SSH as the only access path, enterprise system integration (GraphQL API introspection, SMB admin shares, base64-over-SSH file transfer); 8 governance rules derived from prior session's sshd lockout held under production load, none fired incorrectly, one fired correctly when it mattered. Book on Gumroad about how I did this with Claude: awacsai.gumroad.com/l/Claude-ssh-arc-Azure-Local."
+        tags: [enterprise-deployment, azure, wdac, ai-governance, enforcement, production, fde]
+
+      - id: rubrik_observability
+        text: "**Shipped AI-powered Rubrik observability:** an LLM system that answers operational questions over the company's own structured backup data across 3,000+ weekly jobs and 5 global sites; Azure Functions + Azure OpenAI + ServiceNow; six weeks zero to production. Framework repo: github.com/Dwink213/api-observability-framework; case study: awacs.ai/case-studies/api-voyager.html."
+        tags: [azure, azure-openai, production, llm-ops, servicenow, velocity]
+
+      - id: claude_deployment_wizard
+        text: "**Architected Claude Code Azure deployment wizard** across Dev/Staging/Prod with nightly CI/CD drift detection; 14 destroy/redeploy cycles, 24 hours autonomous testing, zero failures, one week."
+        tags: [claude, azure, cicd, agentic, automation, rapid-prototyping, velocity]
+
+      - id: rubrik_global_rollout
+        text: "**Led Rubrik global rollout** across 5 countries (Israel, Poland, Costa Rica, Mexico, US), coordinated delivery across distributed sites and time zones; migrated petabyte-scale workloads from Commvault with zero data loss."
+        tags: [infrastructure, data-protection, enterprise, rubrik, global, distributed-team, leadership]
+
+  - company: "National Cloud Provider"
+    location: "Raleigh, NC"
+    dates: "Oct 2011 – Apr 2020"
+    title: "Senior Systems Engineer / Architecture & Engineering"
+    bullets:
+      - id: cloud_provider_team_lead
+        text: "**Team lead, 6 years:** led the engineering team and ran the architecture-team scrums; mentored engineers from onboarding through delivery, including a junior engineer as a direct report, and designed the Level I → Lead promotion path the organization adopted, built so delivery had no single point of failure."
+        tags: [leadership, player-coach, team, mentorship, people-management, tech_lead_manager, distributed-team, agile, scrum, direct-report]
+
+      - id: cloud_provider_engagement_model
+        text: "**Engagement model at scale:** designed data protection for ~50 customer environments across dedicated, hybrid, private, and public cloud; technical lead on the largest accounts, where no two environments were alike and the real cost was the integration work vendor docs leave out."
+        tags: [multi-client, enterprise, fde, engagement-model, customer-facing]
+
+      - id: cloud_provider_multi_client
+        text: "**Led the project to migrate thirteen data centers to new data protection platforms** across the provider's national footprint."
+        tags: [multi-client, leadership, team, infrastructure, enterprise]
+
+      - id: cloud_provider_backup_product
+        text: "**Designed the multi-tenant remote backup solution** for a national multi-tenant cloud provider; built the Level I/II/III service tiers; technical lead on the largest customer environments."
+        tags: [product, multi-tenant, infrastructure, data-protection, leadership]
+
+  - company: "Raleigh / County 911"
+    location: "Raleigh, NC"
+    dates: "Jun 2004 – Oct 2011"
+    title: "Senior Systems Administrator / Team Lead"
+    format: prose
+    text: >
+      Team lead for the systems group running critical infrastructure for the county emergency
+      dispatch (Police, Fire, EMS): led the team that migrated 10 physical to 200+ VMs on ESX 3.5;
+      stood up DR 911 center with annual failover; built in-car MDC unifying field comms.
+      Production was life-safety, downtime measured in lives.
+    tags: [infrastructure, leadership, critical-systems, team-lead, people-management]
+
+founder_work:
+  - id: awacs_llc
+    name: "AWACS LLC"
+    role: "Founder & Principal AI Engineer"
+    location: "Raleigh, NC"
+    dates: "2024 – Present"
+    tags: [ai-governance, methodology, agentic, fde, enterprise, llm-ops, production]
+    bullets:
+      - "**Production methodology for embedding AI agents in regulated enterprise environments** where vendor docs are insufficient and field debugging is the only ground truth; five public frameworks, taught publicly with demo-able working models and talks to 250+ live audiences (awacs.ai/methodology, awacs.ai/talks)."
+      - "**Gated knowledge base:** every entry must pass a 5-question admission gate before it is admitted, then sorted into Class A/B/C trust tiers; 62 execution-validated entries, 80 logged admit/reject decisions, 31 automated pre-session checks."
+      - "**Governance enforced by code, not prompts:** a hook-level layer blocks destructive operations via exit(2); every production incident becomes an enforced rule that loads in every future session, so the methodology survives handoff."
+    text: >
+      Production methodology for embedding AI agents in regulated enterprise environments where
+      vendor docs are insufficient and field debugging is the only ground truth. Five public
+      frameworks; live knowledge base (62 execution-validated entries, 80 logged gate decisions,
+      31 automated pre-session checks). Methodology taught publicly, five frameworks and demo-able
+      working models, plus talks to 250+ live audiences (awacs.ai/methodology, awacs.ai/talks).
+      Governance layer blocks destructive operations at the hook level via exit(2), not via
+      prompt-based safety. Engagement model designed to survive handoff: every production incident
+      generates an enforced rule that loads in every future session.
+
+  - id: federal_proposal
+    name: "Federal Proposal Consultancy"
+    role: "Technical Solutions Architect"
+    dates: "2025 – Present"
+    tags: [govcon, federal, ai, proposal, llm, production]
+    text: >
+      AI systems for federal GOVCON. AI-powered proposal writer with Shipley-method creation and
+      review, BID/NO-BID decision support, SAM.GOV integration, zero-fabrication architecture,
+      human-in-the-loop validation. 200+ dev hours, production deployed.
+
+open_source:
+  - pr: "#44707"
+    text: "Hook exit codes: exit(1) is silently non-blocking; only exit code 2 stops a PreToolUse operation. Undocumented; produces false confidence in enforcement architecture."
+    tags: [ai-governance, enforcement, claude, hooks, documentation]
+
+  - pr: "#57946"
+    text: "PreToolUse enforcement silently bypassed on Windows / Git Bash; hooks exit 49 with no output when python3 resolves to the Store stub. Labeled area:hooks area:security platform:windows."
+    tags: [ai-governance, enforcement, security, claude, hooks, windows]
+
+  - pr: "#44711"
+    text: "Three CLI flags in --help missing from the docs (--brief, --file, --mcp-debug); confirmed in v2.1.92."
+    tags: [claude, documentation, hooks]
+
+competency_blocks:
+  # Each block has a label, terms, and tags.
+  # Generator picks blocks whose tags overlap JD, reorders by match score.
+  - id: agent_governance
+    label: "Agent governance"
+    terms: "Claude Code PreToolUse/PostToolUse hooks, exit(2) enforcement, governance across file-level rules, hook enforcement, and infrastructure constraints, 5-question admission gate, Class A/B/C trust tiers, multi-agent orchestration (Analyzer + Librarian pattern), circuit breakers, SHA-256 brake events, append-only JSONL decision logs"
+    tags: [ai-governance, agentic, enforcement, llm-ops, multi-agent, quality-gates, fde]
+    weight: 10
+
+  - id: llm_agentic
+    label: "LLM & agentic systems"
+    terms: "Azure OpenAI, prompt engineering, orchestration (memory, state, tool-calling), MCP servers, sandbox tooling, high-fidelity internal demos, rapid iteration, player-coach technical leadership, agentic pipelines, LLM evaluation, shadow testing, application integration patterns"
+    tags: [llm, agentic, rapid-prototyping, sandbox, mcp, orchestration, llm-ops, tech_lead_manager, player-coach, high-fidelity]
+    weight: 9
+
+  - id: enterprise_deployment
+    label: "Enterprise deployment"
+    terms: "Azure Local (HCI), Azure Arc SSH, WDAC, Azure Functions, Key Vault, Managed Identity, Bicep, GraphQL API introspection, ServiceNow integration, enterprise auth patterns (cert-based SP, SAS rotation)"
+    tags: [enterprise-deployment, azure, wdac, infrastructure, integration, fde]
+    weight: 7
+
+  - id: languages
+    label: "Languages"
+    terms: "Python (11k+ LOC production), PowerShell, Bash, JavaScript, KQL"
+    tags: [python, javascript, languages, full-stack]
+    weight: 5
+
+  - id: cloud_iac
+    label: "Cloud / IaC"
+    terms: "Azure Local, Azure Arc, Functions, Key Vault, Policy, Bicep, Terraform, GitHub Actions"
+    tags: [azure, infrastructure, iac, cicd]
+    weight: 4
+
+  - id: security
+    label: "Security / Governance"
+    terms: "WDAC, service principal scoping, CIS Azure Benchmark v5.0, zero-trust, RBAC, immutability, cert-based auth"
+    tags: [security, zero-trust, azure, governance, enterprise]
+    weight: 6
+
+  - id: data_protection
+    label: "Data protection / Virt"
+    terms: "Rubrik, Commvault, Veeam, Avamar, VMware vSphere, Nutanix, KVM"
+    tags: [infrastructure, data-protection, backup, virtualization]
+    weight: 2
+
+certifications:
+  - "Azure Administrator (2025)"
+  - "Amazon Bedrock Custom Models (2025)"
+  - "Azure Fundamentals (2024)"
+  - "Rubrik Certified Engineer (2021)"
+
+# Education, factual and brief for ATS parse-safety.
+# The Y2K-departure narrative is a summary/cover hook, not an Education-line claim.
+# Honesty guardrail: coursework only, no degree claimed.
+education:
+  - "North Carolina State University, Computer Engineering coursework (1998–2000)"
+
+# Role-type → preferred tag clusters
+# Generator uses this to seed the JD weighting when role_type is detected.
+role_type_tags:
+  fde: [fde, agentic, ai-governance, enterprise-deployment, multi-client, engagement-model, quality-gates, playbook, leadership, player-coach, people-management, distributed-team]
+  agentic_lead: [multi-agent, agentic, orchestration, ai-governance, enforcement, llm-ops, circuit-breakers]
+  applied_ai_engineer: [llm, agentic, rapid-prototyping, production, python, azure-openai, velocity]
+  research_engineer: [llm, evaluation, agentic, rapid-prototyping, hypothesis-first, shadow-testing]
+  tech_lead_manager: [player-coach, leadership, rapid-prototyping, demos, communication, sandbox, llm-ops, velocity]
+  trust_and_safety: [ai-governance, enforcement, security, quality-gates, adversarial, observability]
+  govcon: [govcon, federal, security, zero-trust, enterprise, production]

@@ -1,0 +1,63 @@
+id: zero-trust-azure-lab
+title: "DIRECTED A 31-HOUR, COMPLETELY AUTONOMOUS, ZERO-TRUST MULTI-AGENT BUILD"
+type: case-study
+date: "2025-11"
+employer: "AWACS LLC"
+role_types: [agentic_lead, applied_ai_engineer, tech_lead_manager, govcon]
+tags: [azure, infrastructure, multi-agent, agentic, autonomous, security, iac, bicep, rbac, zero-trust, enterprise, rapid-prototyping, production, leadership, governance, claude]
+includes:
+  - "Completely autonomous: 31 hours, 2 human interventions"
+  - "Zero-trust Azure environment, CIS Foundations v5.0 (6 controls)"
+  - "4 specialist agents: Architect, Security Engineer, Operator, Documentarian"
+  - "8-component Bicep IaC, immutable blob, cert-based service principal auth"
+  - "Repo: github.com/Dwink213/awacs-secure-data-consolidation-lab-workstations"
+ats_keywords:
+  - zero trust
+  - CIS benchmark
+  - Azure Key Vault
+  - Bicep IaC
+  - multi-agent orchestration
+  - threat modeling
+  - RBAC design
+  - cert-based authentication
+  - service principal
+  - SAS rotation
+  - immutability
+  - Log Analytics
+metrics:
+  - "31 hours, fully autonomous, 4 specialist agents"
+  - "Threat model: 6 named actors (insider, lifted credential, rogue admin, network MITM, compromised workstation, curious consumer)"
+  - "CIS Azure Foundations Benchmark v5.0 alignment: controls 3.1, 3.7, 3.13, 3.14, 5.1, 7.1"
+  - "7 atomic components, each with independent READMEs"
+  - "4-role RBAC, daily SAS rotation, cert-based SP auth"
+claims:
+  - verified: true
+    text: "Built with 4 specialist AI agents in coordination: Architect, Security Engineer, Operator, Documentarian"
+    proof: "Repo docs/cross-agent-reviews/ contains the cross-agent review transcripts"
+  - verified: true
+    text: "CIS Azure Foundations Benchmark v5.0 controls named and mapped in documentation"
+    proof: "GitHub: github.com/Dwink213/awacs-secure-data-consolidation-lab-workstations"
+evidence_urls:
+  - "https://github.com/Dwink213/awacs-secure-data-consolidation-lab-workstations"
+testimony: >
+  I wanted to know if a four-agent system could build enterprise-grade infrastructure from
+  nothing in under 48 hours, and whether the output would be honest about what it hadn't
+  yet done. The four agents had distinct roles: Architect designed the system, Security
+  Engineer owned the threat model and RBAC, Operator wrote the deployment scripts and
+  runbooks, Documentarian captured cross-agent reviews and limitations. The threat model
+  named six actors; the CIS controls mapped to specific Bicep resource configurations.
+  The most important design decision: the Limitations section is part of the deliverable.
+  Not an afterthought, it's documented in the README of every component. If something
+  wasn't shipped, the repo says so. That discipline is harder to maintain in a real client
+  engagement than it sounds.
+bullet_variants:
+  featured: >
+    I configured four specialist agents and ran a completely autonomous 31-hour Claude Code
+    session that designed and deployed a zero-trust on-premise-to-Azure workflow overnight. The
+    design plan was built in natural language with Claude on my phone; Claude Code imported my
+    methodology, built new agents, and stood it up overnight. I authorized the first two stage
+    gates, then set it to autonomous; you can see the commit times in GitHub. It then installed
+    itself on the machine it was running on and validated end to end.
+  long: "**Zero-trust Azure data lab, 31-hour autonomous agentic build:** 4 specialist agents (Architect, Security, Operator, Documentarian), 6-actor threat model, CIS Azure Benchmark v5.0 alignment (controls 3.1–7.1), Bicep IaC, 4-role RBAC, cert-based SP auth, daily SAS rotation."
+  short: "Built a zero-trust Azure lab in 31 hours with 4 specialist AI agents; CIS v5.0 aligned, threat-modeled with 6 named actors, fully documented including limitations."
+  ats_dense: "**Zero-trust Azure infrastructure (Bicep IaC, Key Vault, RBAC, Log Analytics, cert-based service principal, CIS Azure Benchmark v5.0):** 4-agent autonomous build, 31 hours; threat model with 6 named actors; immutability + daily SAS rotation deployed."

@@ -1,0 +1,33 @@
+# Testimony Knowledge Base — Schema Reference
+#
+# Each testimony file in testimonies/ describes ONE project, deployment,
+# discovery, or achievement. The resume generator loads all files and
+# scores them against a job description to select the best match.
+#
+# Required fields:
+#   id            — kebab-case unique key (must match filename)
+#   title         — full project title (displayed in FEATURED ENGAGEMENT section)
+#   type          — case-study | deployment | talk | open-source-pr | tool | methodology
+#   date          — "YYYY-MM" or "YYYY-MM to YYYY-MM" (used for date ordering)
+#   employer      — "AWACS LLC" | "Enterprise Health-Tech Co." | "National Cloud Provider" | "Raleigh / County 911"
+#   role_types    — list of: fde | agentic_lead | applied_ai_engineer | tech_lead_manager |
+#                   research_engineer | trust_and_safety | govcon
+#   tags          — from the canonical tag vocabulary (see resume-source.yaml)
+#   ats_keywords  — additional terms NOT in tags that an ATS might match on
+#   testimony     — first-person narrative, 2-6 sentences, explains the WHY and the HOW
+#   metrics       — list of specific quantitative facts; pulled into bullets
+#   claims        - list of {verified: bool, text: str, proof: str} entries
+#   evidence_urls — list of public URLs (GitHub, awacs.ai, etc.)
+#   bullet_variants:
+#     featured    — long-form prose (for FEATURED ENGAGEMENT section)
+#     long        — 1-2 sentence bullet with metrics (for experience section)
+#     short       — ≤1 sentence (for tight-space layouts)
+#     ats_dense   — maximizes keyword density without sounding robotic
+
+# Type vocabulary:
+#   case-study    — a full project with documented outcome
+#   deployment    — a production deployment at an employer
+#   talk          — a presentation, enablement session, or workshop
+#   open-source-pr — a GitHub contribution to a public repository
+#   tool          — a standalone tool, script, or framework built
+#   methodology   — a repeatable process or playbook (no single artifact)

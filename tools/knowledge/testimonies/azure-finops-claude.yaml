@@ -1,0 +1,50 @@
+id: azure-finops-claude
+title: "AZURE FINOPS WITH CLAUDE: COST BILLING MANAGEMENT VIA AGENTIC CLI"
+type: case-study
+date: "2026-05"
+employer: "AWACS LLC / Enterprise Health-Tech Co."
+role_types: [applied_ai_engineer, agentic_lead, solutions_architect]
+tags: [azure, finops, cost-management, billing, claude, agentic, cli]
+ats_keywords:
+  - FinOps
+  - Azure Cost Management
+  - Azure billing
+  - cost optimization
+  - cloud cost governance
+  - agentic cost analysis
+  - Azure CLI
+  - cost accountability
+  - resource cost attribution
+  - cloud spend analysis
+metrics:
+  - "Used Claude Code to authenticate into Azure and perform cost billing analysis"
+  - "Agentic Azure Cost Management queries for resource cost attribution"
+  - "Cost governance applied across Dev/Staging/Prod environments"
+claims:
+  - verified: true
+    text: "Used Claude Code to log into Azure and perform cost billing management queries"
+    proof: "Direct user-confirmed work; Claude Code + Azure CLI session artifacts"
+evidence_urls:
+  - "https://awacs.ai/compare-azure"
+testimony: >
+  Most AI deployments treat cost as an afterthought — billing shows up at the end of
+  the month and someone's surprised. I flipped this. Using Claude Code as the operator,
+  I authenticated into Azure and ran cost billing management queries directly: resource
+  cost attribution, subscription-level spend analysis, and cost allocation across
+  environments. Claude Code handled the Azure CLI authentication flow, queried Azure
+  Cost Management APIs, and surfaced cost anomalies and optimization opportunities
+  without requiring a human to manually navigate the portal. This is FinOps as an
+  agentic workflow: the AI is the cost analyst, not just the infrastructure builder.
+  The methodology for cost-aware engineering (tokens, milliseconds, and dollars as
+  first-class metrics) documented at awacs.ai/compare-azure extends to cloud spend:
+  every resource decision carries an attached cost vector.
+bullet_variants:
+  featured: >
+    Applied FinOps principles via agentic Azure CLI: used Claude Code to authenticate
+    into Azure, query Azure Cost Management for resource cost attribution, and surface
+    optimization opportunities across environments — treating cloud spend as an
+    engineering metric, not an afterthought. Cost-aware engineering methodology
+    documented at awacs.ai/compare-azure.
+  long: "**Azure FinOps (agentic):** Claude Code-driven Azure Cost Management queries for resource cost attribution, subscription spend analysis, and environment-level cost governance; extends compare-azure cost methodology from token/ms to cloud dollar metrics."
+  short: "Used Claude Code to perform Azure FinOps: authenticated into Azure, queried Cost Management for resource attribution and spend analysis across environments."
+  ats_dense: "**Azure FinOps / Cost Management (agentic CLI, Azure Cost Management API, cost attribution, cloud spend governance):** Claude Code operator for cost billing analysis; resource attribution across Dev/Staging/Prod; cost-aware engineering as first-class metric."

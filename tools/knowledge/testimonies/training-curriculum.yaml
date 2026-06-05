@@ -1,0 +1,48 @@
+id: training-curriculum
+title: "BUILT AND PUBLISHED A PAID TECHNICAL TRAINING CURRICULUM (HANDS-ON LABS, ENROLLING)"
+type: course
+date: "2026-05"
+employer: "AWACS LLC"
+role_types: [tech_lead_manager, applied_ai_engineer, fde]
+tags: [training, curriculum, teaching, enablement, content, demos, labs, communication, player-coach, leadership, azure, iac, agentic, production]
+ats_keywords:
+  - technical training
+  - curriculum development
+  - hands-on labs
+  - training content
+  - course development
+  - enablement
+  - instructional design
+  - published curriculum
+  - demo development
+  - AI orchestration
+metrics:
+  - "3 courses published at awacs.ai/training"
+  - "Course 1 (2 days, $3,000/seat) enrolling now; Courses 2 and 3 follow"
+  - "Hands-on labs: deploy dev, staging, prod Azure environments; break and fix with AI"
+  - "Ships with free tools: Bicep Deployment Wizard, Front9/Back9 naming demo"
+claims:
+  - verified: true
+    text: "Built and published a three-course paid training curriculum with hands-on labs; Course 1 enrolling"
+    proof: "https://awacs.ai/training"
+evidence_urls:
+  - "https://awacs.ai/training"
+testimony: >
+  I turned my own method into training other people can run. The curriculum at awacs.ai/training
+  is three courses on AI-orchestrated infrastructure, built around hands-on labs rather than
+  slides: students deploy dev, staging, and prod Azure environments, break things on purpose,
+  and fix them with AI assistance. I wrote the course content, the labs, and the free tools that
+  ship with it. Course 1 is two days and enrolling; Courses 2 and 3 follow. The hard part of
+  enablement is not explaining a concept, it is getting someone to do the thing and recover when
+  it breaks. That is what the labs are for.
+bullet_variants:
+  featured: >
+    I built and publish a paid technical training curriculum at awacs.ai/training: three courses
+    on AI-orchestrated infrastructure, built around hands-on labs where students deploy dev,
+    staging, and prod Azure environments, break things on purpose, and fix them with AI. I wrote
+    the course content, the labs, and the free tools that ship with it (the Bicep Deployment
+    Wizard, the Front9/Back9 naming demo). Course 1 is two days and enrolling now; Courses 2 and
+    3 follow. This is the work enablement actually is: turning a method into training people can run.
+  long: "**Built a paid technical training curriculum (awacs.ai/training):** 3 courses on AI-orchestrated infrastructure with hands-on labs (deploy dev/staging/prod Azure, break and fix with AI); wrote the content, labs, and free tools; Course 1 enrolling."
+  short: "Built and publish a 3-course paid technical training curriculum with hands-on labs (awacs.ai/training); Course 1 enrolling."
+  ats_dense: "**Technical training and curriculum development (hands-on labs, course content, demos, instructional design):** 3 published courses on AI-orchestrated Azure infrastructure; students deploy dev/staging/prod and recover from induced failures; authored content, labs, and free tooling."

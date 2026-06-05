@@ -1,0 +1,34 @@
+# cover-sheet-lint.yaml — hard gate for cover sheet quality.
+# check-cover-sheet.py reads this and FAILS (exit 2) on any violation.
+# The songs, articles, and upstream issues are REQUIRED — not optional.
+# Internal labels are BANNED — they mean the template instructions leaked into the deliverable.
+
+# 1) Banned strings — internal commentary that must never reach a hiring manager.
+banned:
+  - "Suggested opening line"       # template label, not a section in the deliverable
+  - "Application constraints"      # internal tracking section
+  - "Company: TBD"                 # placeholder not replaced
+  - "Company name TBD"             # placeholder not replaced
+  - "company is TBD"               # placeholder not replaced
+  - "\\bRecruiter:\\s"             # internal label format (Recruiter: Hannah)
+  - "INTERNAL ONLY"                # template instruction block leaked
+  - "\\{\\{[A-Z_]+\\}\\}"         # unfilled placeholder ({{HUMAN_NOTE}} etc.)
+  - "Update this section when"     # internal process note
+  - "\\[paste the full"            # copy-paste instruction that leaked
+
+# 2) Required strings — the fixed sections that must always be present.
+required:
+  - "suno.com/s/QNL0bLzDAf2KP13b"           # AI Through Infrastructure (song 1)
+  - "suno.com/s/Ux8KdhDMgbXHfFlU"           # Agent Roll Call (song 2)
+  - "suno.com/s/V92oZN1GJkLNYRqz"           # Eye of the Tired (song 3)
+  - "notebooklm.google.com"                  # NotebookLM
+  - "awacsai.gumroad.com"                    # eBook
+  - "Hooking Ain't Easy"                     # article
+  - "Chicken Headphones"                     # article
+  - "not-a-dev-not-a-problem"                # talk
+  - "parenting-young-sheldon"                # talk
+  - "#44707"                                 # upstream issue
+  - "#57946"                                 # upstream issue
+  - "claude.ai/share"                        # Claude workspace link
+  - "github.com/Dwink213/manifest"           # manifest link
+  - "human written"                          # the "A note from Dustin (human written)" label

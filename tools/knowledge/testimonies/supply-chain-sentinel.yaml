@@ -1,0 +1,59 @@
+id: supply-chain-sentinel
+title: "DIRECTED A RAPID 7-STAGE SUPPLY-CHAIN RISK POC"
+type: tool
+date: "2025-08"
+employer: "AWACS LLC"
+role_types: [applied_ai_engineer, agentic_lead, tech_lead_manager]
+tags: [rapid-prototyping, llm, pipeline, velocity, python, poc, agentic]
+includes:
+  - "7-stage LLM pipeline with T1/T2/T3 supplier inference"
+  - "Executive dashboards with Plotly network visualizations"
+  - "12 REST API endpoints, multi-company support"
+  - "About 11,000 lines of Python (Flask, the Claude API)"
+  - "Repo: github.com/Dwink213/AI-supplychainmonitor-v2"
+ats_keywords:
+  - LLM pipeline
+  - supply chain risk
+  - structured data
+  - structured output
+  - Python
+  - 7-stage pipeline
+  - rapid prototyping
+  - rapid development
+  - pipeline architecture
+  - sequential analysis
+  - deadline-driven delivery
+  - proof of concept
+metrics:
+  - "~11,000 lines of Python"
+  - "7 sequential analysis stages"
+  - "1 week, zero to working demo"
+  - "Each stage produces structured output consumed by the next"
+claims:
+  - verified: true
+    text: "11,000 lines of Python shipped in one week"
+    proof: "GitHub: github.com/Dwink213/AI-supplychainmonitor-v2"
+  - verified: true
+    text: "7-stage sequential pipeline with structured inter-stage output"
+    proof: "Codebase architecture documented in repo README"
+evidence_urls:
+  - "https://github.com/Dwink213/AI-supplychainmonitor-v2"
+testimony: >
+  Real deadline. Seven stages. One week. I directed the build of a POC over structured
+  data that turns supply-chain signals into supplier risk and disruption answers, zero to
+  working demo in one week. I designed the pipeline upfront: seven sequential analysis
+  stages for supply chain risk, each stage producing structured output that the next stage
+  consumes. No ad-hoc prompt chains, no duct tape between stages. The output of stage 3
+  has a schema that stage 4 depends on. When you design the data contracts first, the
+  velocity follows from discipline rather than from cutting corners. Eleven thousand lines
+  of Python in a week. The point is not the line count, the point is that velocity and
+  structure are not in conflict when the architecture is settled before the first line is
+  written. This is the develop-POCs and rapidly-prototype workstream, not a side project.
+bullet_variants:
+  featured: >
+    I directed the build of a POC over structured data that turns supply-chain signals
+    into supplier risk and disruption answers, zero to working demo in one week.
+    I owned the architecture; the agent did the typing.
+  long: "**Supply Chain Sentinel, 7-stage LLM pipeline (POC):** ~11k LOC Python, zero to working demo in 1 week; built over structured data; each of 7 stages produces structured output consumed by the next; architecture designed upfront, not retrofitted."
+  short: "Directed a rapid 7-stage LLM supply-chain risk POC (~11k LOC Python) over structured data in one week, zero to working demo."
+  ats_dense: "**LLM pipeline (Python, 7-stage sequential analysis, structured inter-stage output, rapid POC):** 11,000 LOC, 1-week zero-to-demo; supply-chain risk domain over structured data; velocity delivered through upfront architecture, not shortcuts."

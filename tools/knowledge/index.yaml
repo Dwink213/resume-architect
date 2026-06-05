@@ -1,0 +1,103 @@
+# Testimony Knowledge Base — Master Index
+# Regenerate by running: python tools/search-kb.py --reindex
+# Last updated: 2026-05-25
+
+entries:
+  - id: doctrine-enforcement
+    file: testimonies/doctrine-enforcement.yaml
+    title: "DOCTRINE ENFORCEMENT: AGENTIC GOVERNANCE SCAFFOLD FROM ZERO"
+    type: case-study
+    employer: "AWACS LLC"
+    date: "2026-02"
+    role_types: [fde, agentic_lead, trust_and_safety, applied_ai_engineer]
+    tags: [ai-governance, agentic, quality-gates, playbook, fde, enforcement, enterprise, llm-ops, adversarial]
+
+  - id: zero-trust-azure-lab
+    file: testimonies/zero-trust-azure-lab.yaml
+    title: "ZERO-TRUST AZURE DATA LAB: 31-HOUR AUTONOMOUS AGENTIC BUILD"
+    type: case-study
+    employer: "AWACS LLC"
+    date: "2025-11"
+    role_types: [agentic_lead, applied_ai_engineer, tech_lead_manager, govcon]
+    tags: [azure, infrastructure, multi-agent, security, iac, bicep, rbac, zero-trust, enterprise]
+
+  - id: awacs-lab-pipeline
+    file: testimonies/awacs-lab-pipeline.yaml
+    title: "AWACS LAB: MULTI-AGENT KNOWLEDGE PIPELINE WITH LIVE QUALITY GATE"
+    type: tool
+    employer: "AWACS LLC"
+    date: "2025-10"
+    role_types: [agentic_lead, applied_ai_engineer, tech_lead_manager, research_engineer, trust_and_safety]
+    tags: [multi-agent, agentic, orchestration, llm-ops, sandbox, quality-gates, observability, rapid-prototyping]
+
+  - id: supply-chain-sentinel
+    file: testimonies/supply-chain-sentinel.yaml
+    title: "SUPPLY CHAIN SENTINEL: 7-STAGE LLM PIPELINE, 1 WEEK, 11K LOC"
+    type: tool
+    employer: "AWACS LLC"
+    date: "2025-08"
+    role_types: [applied_ai_engineer, agentic_lead, tech_lead_manager]
+    tags: [rapid-prototyping, llm, pipeline, velocity, python, production, agentic]
+
+  - id: wdac-ai-deployment
+    file: testimonies/wdac-ai-deployment.yaml
+    title: "WDAC AI DEPLOYMENT UNDER FULL ENFORCEMENT"
+    type: deployment
+    employer: "Enterprise Health-Tech Co."
+    date: "2026-01"
+    role_types: [fde, agentic_lead, applied_ai_engineer, trust_and_safety]
+    tags: [enterprise-deployment, azure, wdac, ai-governance, enforcement, production, fde]
+
+  - id: rubrik-observability
+    file: testimonies/rubrik-observability.yaml
+    title: "AI-POWERED RUBRIK OBSERVABILITY: 5 GLOBAL SITES, 6 WEEKS"
+    type: deployment
+    employer: "Enterprise Health-Tech Co."
+    date: "2024-09"
+    role_types: [applied_ai_engineer, agentic_lead, tech_lead_manager]
+    tags: [azure, azure-openai, production, llm-ops, servicenow, velocity]
+
+  - id: claude-azure-wizard
+    file: testimonies/claude-azure-wizard.yaml
+    title: "CLAUDE CODE AZURE DEPLOYMENT WIZARD: DEV/STAGING/PROD CI/CD"
+    type: deployment
+    employer: "Enterprise Health-Tech Co."
+    date: "2025-12"
+    role_types: [applied_ai_engineer, agentic_lead, tech_lead_manager]
+    tags: [claude, azure, cicd, agentic, automation, rapid-prototyping, velocity]
+
+  - id: ai-enablement-talk
+    file: testimonies/ai-enablement-talk.yaml
+    title: "AI ENABLEMENT SESSIONS: 200+ ATTENDEES, SVP TO ENGINEERS"
+    type: talk
+    employer: "Enterprise Health-Tech Co."
+    date: "2026-02"
+    role_types: [tech_lead_manager, fde, applied_ai_engineer]
+    tags: [ai-enablement, demos, leadership, communication, agentic, player-coach]
+
+  - id: federal-proposal-system
+    file: testimonies/federal-proposal-system.yaml
+    title: "FEDERAL PROPOSAL CONSULTANCY: AI-POWERED FEDERAL PROPOSAL SYSTEM"
+    type: case-study
+    employer: "Federal Proposal Consultancy"
+    date: "2025-01"
+    role_types: [govcon, applied_ai_engineer, agentic_lead]
+    tags: [govcon, federal, ai, proposal, llm, production]
+
+  - id: cloud-provider-engagement-model
+    file: testimonies/cloud-provider-engagement-model.yaml
+    title: "NATIONAL CLOUD PROVIDER: MULTI-CLIENT ENTERPRISE ENGAGEMENT MODEL AT SCALE"
+    type: methodology
+    employer: "National Cloud Provider"
+    date: "2011-10"
+    role_types: [fde, tech_lead_manager]
+    tags: [multi-client, enterprise, fde, engagement-model, customer-facing, leadership, infrastructure]
+
+  - id: public-safety-critical-infra
+    file: testimonies/public-safety-critical-infra.yaml
+    title: "COUNTY EMERGENCY SERVICES: LIFE-SAFETY INFRASTRUCTURE AT SCALE"
+    type: deployment
+    employer: "Raleigh / County 911"
+    date: "2004-06"
+    role_types: [fde, tech_lead_manager]
+    tags: [infrastructure, leadership, critical-systems, team-lead]
