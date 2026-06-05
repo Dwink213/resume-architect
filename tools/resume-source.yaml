@@ -223,6 +223,7 @@ founder_work:
     name: "Federal Proposal Consultancy"
     role: "Technical Solutions Architect"
     dates: "2025 – Present"
+    role_gate: [govcon]
     tags: [govcon, federal, ai, proposal, llm, production]
     text: >
       AI systems for federal GOVCON. AI-powered proposal writer with Shipley-method creation and
