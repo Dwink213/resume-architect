@@ -27,6 +27,17 @@ except ImportError:
 SCRIPT_DIR = Path(__file__).parent
 
 
+def merge_overrides(cfg: dict, profile: dict) -> dict:
+    """Merge profile.gate_overrides into the universal lint cfg (profile adds, never removes)."""
+    ov = (profile or {}).get("gate_overrides", {}) or {}
+    out = {
+        "required": list(cfg.get("required", []) or []) + list(ov.get("required", []) or []),
+        "banned": list(cfg.get("banned", []) or []) + list(ov.get("banned", []) or []),
+        "max_occurrences": {**(cfg.get("max_occurrences") or {}), **(ov.get("max_occurrences") or {})},
+    }
+    return out
+
+
 def lint(text: str, cfg: dict, extra_required: list) -> list:
     violations = []
     low = text.lower()
@@ -121,6 +132,15 @@ def main():
         sys.exit(1)
 
     cfg = yaml.safe_load(Path(args.config).read_text(encoding="utf-8")) or {}
+
+    import importlib.util as _il
+    _spec = _il.spec_from_file_location("profile_loader", SCRIPT_DIR / "profile_loader.py")
+    _pl = _il.module_from_spec(_spec); _spec.loader.exec_module(_pl)
+    try:
+        profile = _pl.load_profile()
+    except FileNotFoundError:
+        profile = {}
+    cfg = merge_overrides(cfg, profile)
 
     extra_required = load_must_include(rp.parent)
 
