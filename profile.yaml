@@ -1,0 +1,46 @@
+# profile.yaml — the ONE file that makes this engine "you."
+# The /onboard wizard writes this. Engine + skills + gates read it.
+
+identity:
+  name: "Dustin Winkler"
+  contact: "dustin@awacs.ai · awacs.ai · github.com/Dwink213 · linkedin.com/in/dustin-winkler-nc"
+  claude_link: "https://claude.ai/share/f19e5a2d-de9d-45df-8082-640f6a352dc5"
+  taglines:
+    default: "Forward Deployed AI Engineer · 25 years of infrastructure scar tissue"
+    ai:      "Founder & Principal AI Engineer, AWACS · I direct AI to ship production systems"
+    govcon:  "AI Systems Engineer · Federal GOVCON · Governance Architecture"
+
+portfolio:
+  manifest_url: "https://github.com/Dwink213/manifest/blob/main/README.md"
+  lab_url: "https://awacs.ai/lab"
+  default_artifact: "https://awacs.ai/methodology"
+  role_artifact:                       # role_type -> the one artifact spotlighted in the eval prompt
+    tech_lead_manager:   "https://awacs.ai/methodology"
+    research_engineer:   "https://awacs.ai/case-studies/doctrine-enforcement.html"
+    trust_and_safety:    "https://awacs.ai/case-studies/doctrine-enforcement.html"
+    applied_ai_engineer: "https://github.com/Dwink213/api-observability-framework"
+    agentic_lead:        "https://github.com/Dwink213/api-observability-framework"
+    fde:                 "https://awacs.ai/case-studies/api-voyager.html"
+    govcon:              "https://awacs.ai/case-studies/doctrine-enforcement.html"
+
+upstream:                              # renders the "UPSTREAM" resume section; omit block to skip section
+  section_title: "UPSTREAM · ANTHROPICS/CLAUDE-CODE"
+  intro: "My agentic system studied the Claude Code release notes, surfaced these issues, validated them under my direction, and filed them under my account:"
+
+cover_sheet_fixed:                     # copied verbatim into every cover sheet; empty sub-lists omit their section
+  note_template: "When a team needs production AI that survives contact with reality - not a prototype - that's the work I do, and it's why I'm a fit for {role} at {company}. I direct AI to build and ship, and I catch it when it's wrong. The artifacts below are the proof; the evaluation prompt lets you verify it yourself, from scratch, with nothing staged."
+
+differentiators:
+  - "exit(2)"
+  - "31-hour"
+  - "gated KB"
+  - "zero-trust"
+
+gate_overrides:                        # merged with universal lists in resume-lint.yaml
+  required:  ["AWACS", "awacs.ai", "#44707", "#57946", "#44711"]
+  banned:    ["#37550"]
+  max_occurrences: { "11,000": 1, "11k": 1 }
+
+knockouts:
+  education: "NC State, Computer Engineering coursework 1998–2000 — no completed bachelor's"
+  clearances: []
