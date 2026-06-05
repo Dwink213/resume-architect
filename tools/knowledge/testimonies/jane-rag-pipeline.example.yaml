@@ -1,0 +1,28 @@
+# tools/knowledge/testimonies/jane-rag-pipeline.example.yaml
+id: jane-rag-pipeline
+title: "PRODUCTION RAG PIPELINE OVER SUPPORT TICKETS"
+type: case-study
+date: "2024-03 to 2024-09"
+employer: "Acme Data Co"
+role_types: [applied_ai_engineer, agentic_lead]
+tags: [llm, rag, production, python, pipeline, evaluation]
+ats_keywords: ["vector database", "retrieval augmented generation", "embeddings"]
+testimony: >
+  I built a retrieval-augmented generation pipeline answering support questions over
+  60k historical tickets. I owned the architecture: chunking, embeddings, a re-ranking
+  stage, and an eval harness that gated every prompt change before it shipped.
+metrics:
+  - "60,000 tickets indexed"
+  - "12-point answer-accuracy lift over keyword search"
+claims:
+  - { verified: true, text: "Shipped to production", proof: "https://github.com/janedev/rag-pipeline" }
+evidence_urls:
+  - "https://github.com/janedev/rag-pipeline"
+bullet_variants:
+  featured: >
+    Built and shipped a production RAG pipeline over 60k support tickets — chunking,
+    embeddings, re-ranking, and an eval harness gating every prompt change. 12-point
+    accuracy lift over keyword search.
+  long: "Shipped a production RAG pipeline over 60k tickets with an eval gate; 12-point accuracy lift."
+  short: "Production RAG pipeline over 60k tickets."
+  ats_dense: "Retrieval augmented generation (RAG) pipeline, embeddings, vector database, re-ranking, LLM evaluation harness, production Python."

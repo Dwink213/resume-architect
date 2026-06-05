@@ -1,0 +1,26 @@
+# tools/knowledge/testimonies/jane-eval-harness.example.yaml
+id: jane-eval-harness
+title: "LLM EVAL HARNESS AS A SHIP GATE"
+type: tool
+date: "2024-06"
+employer: "Acme Data Co"
+role_types: [applied_ai_engineer, research_engineer]
+tags: [llm, evaluation, evals, python, quality-gates]
+ats_keywords: ["regression testing", "golden dataset", "llm-as-judge"]
+testimony: >
+  I built the eval harness that became the merge gate for every prompt change: a golden
+  dataset, an LLM-as-judge scorer, and a CI step that blocked regressions.
+metrics:
+  - "180-example golden set"
+  - "0 prompt regressions shipped after adoption"
+claims:
+  - { verified: true, text: "Used as CI merge gate", proof: "https://github.com/janedev/eval-harness" }
+evidence_urls:
+  - "https://github.com/janedev/eval-harness"
+bullet_variants:
+  featured: >
+    Built the LLM eval harness that gates every prompt change — golden dataset,
+    LLM-as-judge scoring, CI regression block. Zero prompt regressions shipped after adoption.
+  long: "Built an LLM eval harness used as the CI merge gate; zero prompt regressions after adoption."
+  short: "LLM eval harness used as a CI ship gate."
+  ats_dense: "LLM evaluation harness, golden dataset, llm-as-judge, regression testing, CI quality gate."

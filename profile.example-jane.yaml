@@ -1,0 +1,28 @@
+identity:
+  name: "Jane Developer"
+  contact: "jane@example.com · github.com/janedev · linkedin.com/in/janedev"
+  claude_link: "https://claude.ai/share/EXAMPLE"
+  taglines:
+    default: "Applied AI Engineer · 8 years building data products"
+    ai:      "Applied AI Engineer · I ship LLM features to production"
+    govcon:  "AI Engineer · Public-sector data systems"
+portfolio:
+  manifest_url: "https://github.com/janedev/portfolio"
+  lab_url: "https://janedev.example.com"
+  default_artifact: "https://github.com/janedev/rag-pipeline"
+  role_artifact:
+    applied_ai_engineer: "https://github.com/janedev/rag-pipeline"
+    agentic_lead:        "https://github.com/janedev/eval-harness"
+upstream: null                          # Jane has no upstream PRs — section is omitted
+cover_sheet_fixed:
+  note_template: "I build LLM features that survive production, and I'm a fit for {role} at {company}. The artifacts below are the proof."
+differentiators:
+  - "RAG"
+  - "eval harness"
+gate_overrides:
+  required:  ["janedev"]
+  banned:    []
+  max_occurrences: {}
+knockouts:
+  education: "B.S. Computer Science, State University (2016)"
+  clearances: []

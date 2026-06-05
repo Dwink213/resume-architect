@@ -1,0 +1,66 @@
+header:
+  name: "Jane Developer"
+  tagline_default: "Applied AI Engineer · 8 years building data products"
+  tagline_ai: "Applied AI Engineer · I ship LLM features to production"
+  tagline_govcon: "AI Engineer · Public-sector data systems"
+  contact: "jane@example.com · github.com/janedev"
+  claude_link: "https://claude.ai/share/EXAMPLE"
+
+summaries:
+  applied_ai_engineer: >
+    I build and ship LLM features that survive production. I owned a RAG pipeline over
+    60k support tickets and the eval harness that gates every prompt change. Eight years
+    turning messy data into products teams rely on.
+  agentic_lead: >
+    I design agentic and retrieval systems end to end and gate them with evals before
+    they ship. RAG over 60k tickets, an LLM-as-judge merge gate, zero regressions after adoption.
+
+featured_engagements: []   # Jane uses KB testimonies only
+
+experience:
+  - company: "Acme Data Co"
+    location: "Remote"
+    dates: "2019 – Present"
+    title: "Senior Applied AI Engineer"
+    bullets:
+      - id: jane_rag
+        text: "**Shipped a production RAG pipeline** over 60k support tickets with an eval gate; 12-point accuracy lift."
+        tags: [llm, rag, production, python]
+      - id: jane_eval
+        text: "**Built the LLM eval harness** used as the CI merge gate; zero prompt regressions after adoption."
+        tags: [llm, evaluation, quality-gates]
+  - company: "Early Startup Inc"
+    location: "Austin, TX"
+    dates: "2016 – 2019"
+    title: "Data Engineer"
+    format: prose
+    text: >
+      Built batch and streaming data pipelines feeding the analytics platform; owned the
+      ETL that the whole product reported off of.
+    tags: [python, pipeline, data]
+
+founder_work: []
+
+open_source: []
+
+competency_blocks:
+  - id: llm_systems
+    label: "LLM & retrieval"
+    terms: "RAG, embeddings, vector databases, re-ranking, LLM-as-judge evaluation, prompt engineering"
+    tags: [llm, rag, evaluation]
+    weight: 9
+  - id: languages
+    label: "Languages"
+    terms: "Python, SQL, TypeScript"
+    tags: [python, languages]
+    weight: 5
+
+certifications:
+  - "AWS Solutions Architect Associate (2022)"
+
+education:
+  - "B.S. Computer Science, State University (2016)"
+
+role_type_tags:
+  applied_ai_engineer: [llm, rag, production, python, evaluation]
+  agentic_lead: [llm, rag, evaluation, quality-gates]
