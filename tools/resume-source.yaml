@@ -12,6 +12,79 @@ header:
   # full evaluation against the manifest. This is the link printed on the cover sheet.
   claude_link: "https://claude.ai/share/f19e5a2d-de9d-45df-8082-640f6a352dc5"
 
+# Role-targeted summaries. CONTENT, not engine logic — the engine reads source['summaries']
+# and is identity-agnostic. Copied verbatim from the previously hardcoded generate_summary().
+summaries:
+  fde: >
+    Built the governance infrastructure that makes agentic systems enterprise-safe,
+    not as a prototype, but in production: exit-code-2 enforcement that blocks tool execution
+    before damage occurs, a 5-question admission gate with 80 logged gate decisions, and a
+    field-to-doctrine feedback loop that converts every production incident into an enforced
+    rule loaded at session start. Three upstream contributions to anthropics/claude-code
+    (#44707, #57946, #44711) establish credibility at the
+    tooling layer the FDE practice depends on. Founder of AWACS LLC; methodology codified into
+    five public frameworks and a portable engagement model designed to survive handoff and
+    replicate at scale.
+
+  tech_lead_manager: >
+    I run a personal agentic operating system, and I teach people how to do it. I have
+    delivered live technical training and AI enablement to 200+ people (SVP through engineers)
+    and public talks to 250+ live audiences, with a published set of five frameworks and
+    working models, not slideware. I use Claude Code as core infrastructure: I pointed my
+    system at its release notes, it surfaced three real bugs, I validated them, and it filed
+    them upstream (#44707, #57946, #44711). I set up four specialist agents that designed and
+    deployed a secure, zero-trust Azure environment in a completely autonomous 31-hour run, and
+    I caught it when the AI documented the plan instead of the real change. I do not hand-type the code. I direct the agents, decide
+    the architecture, and catch where they are wrong. Twenty-five years in infrastructure is
+    how I know when AI output will not survive production.
+
+  agentic_lead: >
+    Designed and operated production multi-agent systems from first principles: Analyzer +
+    Librarian pipeline with structured handoff, Class A/B/C trust tiers, 5-question admission
+    gate, 80 logged decisions, and SHA-256 tamper detection. Three upstream contributions to
+    anthropics/claude-code that hardened the hook architecture most agentic deployments depend
+    on, including the discovery that sys.exit(1) in PreToolUse is silently non-blocking.
+    Founder of AWACS LLC; governance layer blocks destructive operations by code, not by prompt.
+
+  applied_ai_engineer: >
+    I run a personal agentic operating system and direct it to build and ship production
+    work, then I prove it did what it said. I have shipped a production LLM system that
+    answers analyst questions over a company's own structured operational data, and I
+    architect the backend it runs on. My product sense is earned, not theoretical:
+    eight-plus years at a managed service provider designing productized offerings customers
+    paid for and ran their business on. I have directed completely autonomous multi-agent
+    builds, from a deployed zero-trust Azure environment to a rapid 7-stage supply-chain
+    risk POC, and I catch the AI when it is wrong. I do not hand-type the code; I decide
+    the architecture, run the agents, and own the result. The same system studied Claude
+    Code's release notes and surfaced three real bugs I validated and filed upstream
+    (#44707, #57946, #44711). Twenty-five years in infrastructure is how I know when AI
+    output will not survive production.
+
+  trust_and_safety: >
+    Built enforcement that actually blocks: PreToolUse hook enforcement via exit(2), 256
+    adversarial assertions, three rounds of intentional violation testing, zero failures. The
+    critical discovery, sys.exit(1) is silently non-blocking in PreToolUse, filed upstream
+    as #44707 and #57946 (area:hooks area:security). Three contributions to the claude-code
+    hook system harden the enforcement architecture AI governance depends on. Founder of AWACS
+    LLC; the governance layer blocks destructive operations by code, not by policy.
+
+  govcon: >
+    Production AI systems in regulated environments where vendor docs are insufficient:
+    AI-powered proposal writer with zero-fabrication architecture (Federal Proposal Consultancy,
+    GOVCON), AI observability across 5 global sites under enterprise authentication constraints,
+    and a zero-trust Azure data consolidation lab with CIS Azure Benchmark v5.0 alignment
+    (six named threat actors, Bicep IaC, cert-based SP auth). Three upstream contributions to
+    anthropics/claude-code harden the hook enforcement architecture. Founder of AWACS LLC;
+    25 years of infrastructure in critical and regulated environments.
+
+  research_engineer: >
+    Filed three upstream contributions to anthropics/claude-code by running adversarial
+    experiments, not by reading docs. Found that sys.exit(1) in PreToolUse is silently
+    non-blocking; filed as #44707 with a one-line fix. Built a 5-question admission gate
+    that runs 80 accept/reject decisions against the same evaluation criteria every time,
+    no drift, no exception paths. Founder of AWACS LLC; hypothesis-first methodology:
+    build the test before the feature, let the failure define the doctrine.
+
 featured_engagements:
   - id: doctrine_enforcement
     title: "DOCTRINE ENFORCEMENT: AGENTIC GOVERNANCE SCAFFOLD FROM ZERO"
