@@ -644,6 +644,7 @@ def main():
         try:
             check_resume = _load("check_resume", "check-resume.py")
             lint_cfg = yaml.safe_load((SCRIPT_DIR / "resume-lint.yaml").read_text(encoding="utf-8")) or {}
+            lint_cfg = check_resume.merge_overrides(lint_cfg, source.get("_profile", {}))
             extra_required = check_resume.load_must_include(jd_folder)
             violations = check_resume.lint(out_path.read_text(encoding="utf-8"), lint_cfg, extra_required)
             if violations:
