@@ -19,7 +19,7 @@ evidence_urls:
   - "https://github.com/janedev/eval-harness"
 bullet_variants:
   featured: >
-    Built the LLM eval harness that gates every prompt change — golden dataset,
+    Built the LLM eval harness that gates every prompt change: golden dataset,
     LLM-as-judge scoring, CI regression block. Zero prompt regressions shipped after adoption.
   long: "Built an LLM eval harness used as the CI merge gate; zero prompt regressions after adoption."
   short: "LLM eval harness used as a CI ship gate."

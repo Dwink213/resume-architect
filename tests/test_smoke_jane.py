@@ -38,3 +38,16 @@ def test_jane_resume_builds_without_dustin_data(tmp_path):
     assert "RAG" in resume_text
     assert "Acme Data Co" in resume_text
     assert "EDUCATION" in resume_text
+
+
+def test_jane_resume_passes_lint(tmp_path):
+    gen = _load_module("generate_resume", "generate-resume.py")
+    chk = _load_module("check_resume", "check-resume.py")
+    source = yaml.safe_load((FIXTURES / "jane-resume-source.yaml").read_text(encoding="utf-8"))
+    source["_profile"] = yaml.safe_load((ROOT / "profile.example-jane.yaml").read_text(encoding="utf-8"))
+    role_type = gen.detect_role_type(SAMPLE_JD)
+    resume_text, _ = gen.build_resume(source, SAMPLE_JD, role_type, tmp_path, dry_run=True)
+    cfg = yaml.safe_load((TOOLS / "resume-lint.yaml").read_text(encoding="utf-8")) or {}
+    cfg = chk.merge_overrides(cfg, source["_profile"])
+    violations = chk.lint(resume_text, cfg, [])
+    assert violations == [], f"Jane resume failed lint: {violations}"

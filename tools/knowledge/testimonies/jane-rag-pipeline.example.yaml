@@ -20,7 +20,7 @@ evidence_urls:
   - "https://github.com/janedev/rag-pipeline"
 bullet_variants:
   featured: >
-    Built and shipped a production RAG pipeline over 60k support tickets — chunking,
+    Built and shipped a production RAG pipeline over 60k support tickets: chunking,
     embeddings, re-ranking, and an eval harness gating every prompt change. 12-point
     accuracy lift over keyword search.
   long: "Shipped a production RAG pipeline over 60k tickets with an eval gate; 12-point accuracy lift."
