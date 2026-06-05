@@ -596,7 +596,8 @@ def main():
             return mod
 
         exports_dir = jd_folder / "exports"
-        docx_out = exports_dir / "dustin-winkler-resume.docx"
+        slug = _pl._name_slug(source.get("_profile"))
+        docx_out = exports_dir / f"{slug}-resume.docx"
         html_out = docx_out.with_suffix(".html")
         rendered = []
         try:

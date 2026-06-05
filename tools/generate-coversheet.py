@@ -187,7 +187,8 @@ def generate(jd_path: Path, no_pdf: bool = False, force_locked: bool = False) ->
     print(f"[OK] Written: {cover_md}  (role_type={role_type}; {company} / {role})")
 
     exports = folder / "exports"
-    docx_out = exports / "dustin-winkler-cover-sheet.docx"
+    slug = _load("profile_loader", "profile_loader.py")._name_slug(_profile())
+    docx_out = exports / f"{slug}-cover-sheet.docx"
     rendered = []
     try:
         render_docx = _load("render_docx", "render-docx.py")
