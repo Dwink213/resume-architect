@@ -29,6 +29,27 @@ upstream:                              # renders the "UPSTREAM" resume section; 
 
 cover_sheet_fixed:                     # copied verbatim into every cover sheet; empty sub-lists omit their section
   note_template: "When a team needs production AI that survives contact with reality - not a prototype - that's the work I do, and it's why I'm a fit for {role} at {company}. I direct AI to build and ship, and I catch it when it's wrong. The artifacts below are the proof; the evaluation prompt lets you verify it yourself, from scratch, with nothing staged."
+  songs_note: "I scored candidate lyrics on singability and hook by voice with ChatGPT from the driver's seat, then produced the top-ranked ones through Suno."
+  songs:
+    - { label: "AI Through Infrastructure", url: "https://suno.com/s/QNL0bLzDAf2KP13b" }
+    - { label: "Agent Roll Call (Rap Battle)", url: "https://suno.com/s/Ux8KdhDMgbXHfFlU" }
+    - { label: "Eye of the Tired", url: "https://suno.com/s/V92oZN1GJkLNYRqz" }
+  writing:                             # portfolio and publications
+    - { label: "Case study, API Voyager (Rubrik observability: a data agent over a company's own structured data)", url: "https://awacs.ai/case-studies/api-voyager.html" }
+    - { label: "NotebookLM, Agents / Stress Tests / How It Works", url: "https://notebooklm.google.com/notebook/36be49c7" }
+    - { label: "eBook, Claude Code Managing Azure Local", url: "https://awacsai.gumroad.com/l/Claude-ssh-arc-Azure-Local" }
+  talks:                               # articles and talks
+    - { label: "Article, Claude: Hooking Ain't Easy", url: "https://linkedin.com/pulse/claude-hooking-aint-easy" }
+    - { label: "Article, Chicken Headphones of Truth", url: "https://linkedin.com/pulse/chicken-headphones-truth" }
+    - { label: "Talk, Not a Dev Not a Problem (200+ attendees)", url: "https://awacs.ai/talks/not-a-dev-not-a-problem" }
+    - { label: "Talk, Parenting Young Sheldon (200+ attendees)", url: "https://awacs.ai/talks/parenting-young-sheldon" }
+  links:                               # grouped link sections (e.g. upstream issues)
+    - section: "Upstream, anthropics/claude-code"
+      items:
+        - { label: "#44707, Hook exit codes: exit(1) is silently non-blocking, only exit 2 stops a PreToolUse op", url: "https://github.com/anthropics/claude-code/issues/44707" }
+        - { label: "#57946, PreToolUse enforcement silently bypassed on Windows / Git Bash", url: "https://github.com/anthropics/claude-code/issues/57946" }
+        - { label: "#44711, Three undocumented CLI flags (--brief, --file, --mcp-debug)", url: "https://github.com/anthropics/claude-code/issues/44711" }
+  footer: "The work is a demonstration. Produced by Claude · directed by Dustin · github.com/Dwink213/manifest"
 
 differentiators:
   - "exit(2)"
@@ -40,6 +61,21 @@ gate_overrides:                        # merged with universal lists in resume-l
   required:  ["AWACS", "awacs.ai", "#44707", "#57946", "#44711"]
   banned:    ["#37550"]
   max_occurrences: { "11,000": 1, "11k": 1 }
+  cover_required:                      # cover-sheet gate adds these identity-bound required strings
+    - "suno.com/s/QNL0bLzDAf2KP13b"     # AI Through Infrastructure (song 1)
+    - "suno.com/s/Ux8KdhDMgbXHfFlU"     # Agent Roll Call (song 2)
+    - "suno.com/s/V92oZN1GJkLNYRqz"     # Eye of the Tired (song 3)
+    - "notebooklm.google.com"           # NotebookLM
+    - "awacsai.gumroad.com"             # eBook
+    - "Hooking Ain't Easy"              # article
+    - "Chicken Headphones"              # article
+    - "not-a-dev-not-a-problem"         # talk
+    - "parenting-young-sheldon"         # talk
+    - "#44707"                          # upstream issue
+    - "#57946"                          # upstream issue
+    - "claude.ai/share"                 # Claude workspace link
+    - "github.com/Dwink213/manifest"    # manifest link
+    - "human written"                   # the "A note from ... (human written)" label
 
 knockouts:
   education: "NC State, Computer Engineering coursework 1998–2000 — no completed bachelor's"
