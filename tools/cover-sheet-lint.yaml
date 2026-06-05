@@ -1,7 +1,11 @@
-# cover-sheet-lint.yaml — hard gate for cover sheet quality.
+# cover-sheet-lint.yaml — UNIVERSAL hard gate for cover sheet quality.
 # check-cover-sheet.py reads this and FAILS (exit 2) on any violation.
-# The songs, articles, and upstream issues are REQUIRED — not optional.
-# Internal labels are BANNED — they mean the template instructions leaked into the deliverable.
+#
+# This file holds ONLY candidate-agnostic checks: no leaked internal labels and no
+# raw {{PLACEHOLDER}} that the generator failed to fill. Identity-bound required
+# strings (a candidate's songs, articles, issues, manifest, claude link) live in
+# profile.yaml -> gate_overrides.cover_required and are merged in at runtime, so no
+# one candidate's artifacts are ever forced on another.
 
 # 1) Banned strings — internal commentary that must never reach a hiring manager.
 banned:
@@ -16,19 +20,7 @@ banned:
   - "Update this section when"     # internal process note
   - "\\[paste the full"            # copy-paste instruction that leaked
 
-# 2) Required strings — the fixed sections that must always be present.
+# 2) Required strings — UNIVERSAL only. The "(human written)" honesty label must always
+#    be present regardless of candidate. Identity-bound requirements come from the profile.
 required:
-  - "suno.com/s/QNL0bLzDAf2KP13b"           # AI Through Infrastructure (song 1)
-  - "suno.com/s/Ux8KdhDMgbXHfFlU"           # Agent Roll Call (song 2)
-  - "suno.com/s/V92oZN1GJkLNYRqz"           # Eye of the Tired (song 3)
-  - "notebooklm.google.com"                  # NotebookLM
-  - "awacsai.gumroad.com"                    # eBook
-  - "Hooking Ain't Easy"                     # article
-  - "Chicken Headphones"                     # article
-  - "not-a-dev-not-a-problem"                # talk
-  - "parenting-young-sheldon"                # talk
-  - "#44707"                                 # upstream issue
-  - "#57946"                                 # upstream issue
-  - "claude.ai/share"                        # Claude workspace link
-  - "github.com/Dwink213/manifest"           # manifest link
-  - "human written"                          # the "A note from Dustin (human written)" label
+  - "human written"                # the "A note from ... (human written)" honesty label

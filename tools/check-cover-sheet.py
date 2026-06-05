@@ -26,6 +26,20 @@ except ImportError:
 SCRIPT_DIR = Path(__file__).parent
 
 
+def merge_overrides(cfg: dict, profile: dict) -> dict:
+    """Merge profile.gate_overrides.cover_required into the universal cover lint cfg.
+
+    Mirrors check-resume.merge_overrides, required-list only: the profile ADDS
+    identity-bound required strings (songs, articles, issues); it never removes a
+    universal check. Jane's profile omits cover_required, so no Dustin artifact is
+    ever forced on her.
+    """
+    ov = (profile or {}).get("gate_overrides", {}) or {}
+    out = dict(cfg or {})
+    out["required"] = list((cfg or {}).get("required", []) or []) + list(ov.get("cover_required", []) or [])
+    return out
+
+
 def lint(text: str, cfg: dict) -> list:
     violations = []
     low = text.lower()
@@ -61,6 +75,16 @@ def main():
         sys.exit(1)
 
     cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
+
+    import importlib.util as _il
+    _spec = _il.spec_from_file_location("profile_loader", SCRIPT_DIR / "profile_loader.py")
+    _pl = _il.module_from_spec(_spec); _spec.loader.exec_module(_pl)
+    try:
+        profile = _pl.load_profile()
+    except FileNotFoundError:
+        profile = {}
+    cfg = merge_overrides(cfg, profile)
+
     violations = lint(cp.read_text(encoding="utf-8"), cfg)
     name = cp.parent.name
 
