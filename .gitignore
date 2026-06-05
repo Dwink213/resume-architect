@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+*.tmp
+# Per-application generated artifacts are disposable
+applications/**/exports/
+!applications/_examples/**/exports/
+# Never ship a personal profile by accident when others fork
+# (the worked-example profile.yaml IS intentionally committed; see CONTAMINATION-MAP.md)
