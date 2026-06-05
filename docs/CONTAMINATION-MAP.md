@@ -8,13 +8,13 @@ identifying strings. This document inventories every retained personal/identifyi
 distinguishable from a leak.**
 
 **Audit date:** 2026-06-05
-**Audit method:** Grep over the entire repo for `example | user@ | @example | Enterprise Health-Tech Co.`,
-the enterprise email domain, plausible internal product/codenames
-(`redacted-product | redacted-product | redacted-product | redacted-product | redacted-product`), and employee usernames.
+**Audit method:** Grep over the entire repo for the W-2 employer's name, its enterprise email
+domain, the `<user>@<employer-domain>` address form, plausible internal product names/codenames,
+and employee usernames. (The literal strings are intentionally not reproduced in this public file.)
 
 ## Leak definition (what must NEVER ship)
 
-- The W-2 employer's **enterprise email domain** (e.g. `example.com`, `user@exampletech.com`)
+- The W-2 employer's **enterprise email domain** (e.g. `<employer-domain>.com`, `<user>@<employer-domain>.com`)
 - **Internal product names / codenames** not on the public record
 - **Employee usernames** / internal handles
 - Any private DES/unemployment-case material, `SUBMITTED.md`, tracker rows, or `exports/`
