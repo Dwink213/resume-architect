@@ -35,6 +35,48 @@ Never invent career facts. If a claim isn't in these three layers, it does not g
 | `/job-hunt-architect` | per job posting | Reads the manifest routing table + a JD, assembles AI-first tailored docs, scores them, runs a brutal critic, writes a provenance `index.md`. |
 | `/filter-forecaster` | after each resume generation, before submitting | Reverse-engineers the ATS + AI-screener + human-recruiter pipeline for a specific application and forecasts pass/fail with fix recommendations. |
 
+## Commands
+
+Setup: `pip install -r requirements.txt` (PyYAML, python-docx, mammoth, pytest). LibreOffice is an
+external dependency, required only for PDF rendering — tests don't need it.
+
+**Tests** (`pytest -v` must stay green before any engine/gate change):
+
+- All tests: `pytest -v`
+- One file: `pytest tests/test_smoke_jane.py -v`
+- One test: `pytest tests/test_smoke_jane.py::test_name -v` or `pytest -k "smoke" -v`
+
+Tests run with `dry_run=True`, so they never touch LibreOffice or write files — that's why CI on
+`ubuntu-latest` skips the PDF toolchain entirely.
+
+**Generate a resume** (the orchestrator — prefer this over calling sub-tools directly):
+
+- `python tools/generate-resume.py --jd applications/<folder>/job-posting.md`
+- It writes `resume.md` into the JD's folder, prints the ATS report, then **auto-chains in-process**:
+  render `.docx` → convert `.html` → render `.pdf` → run the content gate (`check-resume.py`) → sign.
+  One interpreter, not five subprocesses.
+- `--dry-run` prints to stdout and writes nothing (no rendering). `--no-pdf` skips only the PDF step.
+- `--role-type <type>` overrides the auto-detection from the JD text.
+- A folder with a `SUBMITTED.md` is **locked**: the generator exits 3 rather than overwrite it.
+  `--force-locked` is the only override and means "I am replacing a submitted application."
+
+**Search the evidence KB without generating anything:**
+
+- `python tools/generate-resume.py --search-kb "azure cost finops"` — scores and ranks testimonies,
+  prints the top 5. Use this to find what evidence backs a claim before writing it.
+
+**Run a gate by hand** (normally invoked automatically):
+
+- `python tools/check-resume.py --resume applications/<folder>/resume.md`
+- `python tools/check-cover-sheet.py --cover applications/<folder>/cover-sheet.md`
+- `python tools/evidence-check.py "term one" "term two"` — checks whether candidate keywords are
+  backed by a testimony (the keyword-stuffing guard); `--file` reads one term per line.
+
+**Cover sheet + PDF:**
+
+- `python tools/generate-coversheet.py --jd applications/<folder>/job-posting.md`
+- `python tools/render-pdf.py --docx <path-to.docx>` — always use this, never call `soffice` directly.
+
 ## Evidence-gate doctrine — MANDATORY
 
 The defining rule of this repo: **if it isn't evidenced, it doesn't ship.**
